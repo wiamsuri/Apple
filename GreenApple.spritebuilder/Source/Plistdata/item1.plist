@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>page1</key>
+	<string>You can take calcium  supplement. However,</string>
+	<key>page2</key>
+	<string>There is a sodium-calcium 
+exchanger in the cell.  You can also gain more calcium simply by eating less salt.</string>
+	<key>page3</key>
+	<string>The same goes if  you eat too much salt; the calcium you take in 
+will be wasted.</string>
+	<key>page4</key>
+	<string>For more reading:</string>
+	<key>page5</key>
+	<string></string>
+</dict>
+</plist>
