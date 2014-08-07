@@ -27,4 +27,8 @@
     _labelPage5.string = [dict objectForKey:@"page5"];
 }
 
+- (void) forMoreReading{
+    NSLog(@"reading");
+}
+
 @end
