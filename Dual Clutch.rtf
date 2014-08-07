@@ -1,0 +1,125 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab529
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 CCSprite *spriteImage1;\
+CCSprite *spriteImage2;\
+bool is1running;\
+int imageToLoad;\
+\
+- (void) dualClutchLoading\{\
+    \
+    imageToLoad = 0;\
+    is1running = false;\
+    \
+    [self loadNewImage];\
+    [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(loadNewImage) userInfo:nil repeats:true];\
+\}\
+\
+- (void) loadNewImage\{\
+    \
+    CCActionFadeIn *fadein = [CCActionFadeIn actionWithDuration:1];\
+    CCActionFadeOut *fadeout = [CCActionFadeOut actionWithDuration:1];\
+\
+    switch(imageToLoad)\{\
+        case 0:\
+            if(is1running)\{\
+                spriteImage1 = [CCSprite spriteWithImageNamed:@"bigstock-Spices-65509960.png"];\
+                spriteImage1.position = ccp(430, 332);\
+                [_nodeForSprite addChild: spriteImage1];\
+                spriteImage1.opacity = 0;\
+                [spriteImage1 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(-20,-10)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(-100, -50)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(-20,-10)], nil], nil]];\
+            \}\
+            else\{\
+                spriteImage2 = [CCSprite spriteWithImageNamed:@"bigstock-Spices-65509960.png"];\
+                spriteImage2.position = ccp(430, 332);\
+                [_nodeForSprite addChild: spriteImage2];\
+                spriteImage2.opacity = 0;\
+                [spriteImage2 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(-20,-10)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(-100, -50)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(-20,-10)], nil], nil]];\
+            \}\
+            break;\
+        \
+        case 1:\
+            if(is1running)\{\
+                spriteImage1 = [CCSprite spriteWithImageNamed:@"bigstock-Salad-Greek-Salad-isolated-on-60713975.png"];\
+                spriteImage1.position = ccp(70, 335);\
+                [_nodeForSprite addChild: spriteImage1];\
+                spriteImage1.opacity = 0;\
+                [spriteImage1 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(20,-10)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(100, -50)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(20,-10)], nil],nil]];\
+            \}\
+            else\{\
+                spriteImage2 = [CCSprite spriteWithImageNamed:@"bigstock-Salad-Greek-Salad-isolated-on-60713975.png"];\
+                spriteImage2.position = ccp(70, 335);\
+                [_nodeForSprite addChild: spriteImage2];\
+                spriteImage2.opacity = 0;\
+                [spriteImage2 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(20,-10)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(100, -50)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(20,-10)], nil], nil]];\
+            \}\
+            break;\
+            \
+        case 2:\
+            if(is1running)\{\
+                spriteImage1 = [CCSprite spriteWithImageNamed:@"bigstock-Organic-Sushi-Roll-With-Shrimp-62694959.png"];\
+                spriteImage1.position = ccp(405, 295);\
+                [_nodeForSprite addChild: spriteImage1];\
+                spriteImage1.opacity = 0;\
+                [spriteImage1 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(-25,0)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(-125, -50)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(-25,0)], nil], nil]];\
+            \}\
+            else\{\
+                spriteImage2 = [CCSprite spriteWithImageNamed:@"bigstock-Organic-Sushi-Roll-With-Shrimp-62694959.png"];\
+                spriteImage2.position = ccp(405, 295);\
+                [_nodeForSprite addChild: spriteImage2];\
+                spriteImage2.opacity = 0;\
+                [spriteImage2 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(-25,0)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(-125, 0)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(-25,0)], nil], nil]];\
+            \}\
+            break;\
+            \
+        case 3:\
+            if(is1running)\{\
+                spriteImage1 = [CCSprite spriteWithImageNamed:@"bigstock-Raw-Salmon-Fillet-With-Vegetab-58900958.png"];\
+                spriteImage1.position = ccp(175, 250);\
+                [_nodeForSprite addChild: spriteImage1];\
+                spriteImage1.opacity = 0;\
+                [spriteImage1 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(25,0)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(125, 0)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(25,0)], nil], nil]];\
+            \}\
+            else\{\
+                spriteImage2 = [CCSprite spriteWithImageNamed:@"bigstock-Raw-Salmon-Fillet-With-Vegetab-58900958.png"];\
+                spriteImage2.position = ccp(175, 250);\
+                [_nodeForSprite addChild: spriteImage2];\
+                spriteImage2.opacity = 0;\
+                [spriteImage2 runAction:[CCActionSequence actions:[CCActionSpawn actions:fadein,[CCActionMoveBy actionWithDuration:1 position:ccp(25,0)], nil],[CCActionMoveBy actionWithDuration:5 position:ccp(125, 0)],[CCActionSpawn actions:fadeout,[CCActionMoveBy actionWithDuration:1 position:ccp(25,0)], nil], nil]];\
+            \}\
+            break;\
+            \
+        default:break;\
+    \}\
+    \
+    spriteImage1.scaleX = 0.5;\
+    spriteImage1.scaleY = 0.5;\
+    spriteImage2.scaleX = 0.5;\
+    spriteImage2.scaleY = 0.5;\
+    \
+    if(is1running)\{\
+        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(setImage2toNil) userInfo:nil repeats:false];\
+    \}\
+    else\{\
+        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(setImage1toNil) userInfo:nil repeats:false];\
+    \}\
+    \
+    is1running = false;\
+    imageToLoad += 1;\
+    imageToLoad = imageToLoad % 4;\
+\}\
+\
+- (void) setImage1toNil\{\
+    [spriteImage1 removeFromParent];\
+    spriteImage1 = nil;\
+\}\
+\
+- (void) setImage2toNil\{\
+    [spriteImage2 removeFromParent];\
+    spriteImage2 = nil;\
+\}\
+}
