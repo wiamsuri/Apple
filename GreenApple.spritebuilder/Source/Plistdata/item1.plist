@@ -14,5 +14,9 @@ will be wasted.</string>
 	<string>For more reading:</string>
 	<key>page5</key>
 	<string></string>
+	<key>URLString1</key>
+	<string>http://www.bing.com</string>
+	<key>URLString2</key>
+	<string></string>
 </dict>
 </plist>

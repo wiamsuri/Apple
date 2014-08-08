@@ -12,5 +12,9 @@
 	<string>Page 4 enter text here OAD</string>
 	<key>page5</key>
 	<string>Page 5 enter text here OAD</string>
+	<key>URLString1</key>
+	<string>http://www.bing.com</string>
+	<key>URLString2</key>
+	<string></string>
 </dict>
 </plist>

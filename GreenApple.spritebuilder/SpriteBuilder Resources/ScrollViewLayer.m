@@ -14,12 +14,13 @@
     CCLabelTTF *_labelPage3;
     CCLabelTTF *_labelPage4;
     CCLabelTTF *_labelPage5;
+    NSDictionary *dict;
 }
 
 - (void) didLoadFromCCB{
     // Path to the plist (in the application bundle)
     NSString *path = [[NSBundle mainBundle] pathForResource:@"item2" ofType:@"plist"];
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     _labelPage1.string = [dict objectForKey:@"page1"];
     _labelPage2.string = [dict objectForKey:@"page2"];
     _labelPage3.string = [dict objectForKey:@"page3"];
@@ -29,6 +30,8 @@
 
 - (void) forMoreReading{
     NSLog(@"reading");
+    
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[dict objectForKey:@"URLString"]]];
 }
 
 @end
