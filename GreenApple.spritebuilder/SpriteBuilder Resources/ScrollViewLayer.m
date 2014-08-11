@@ -19,7 +19,7 @@
 
 - (void) didLoadFromCCB{
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item2" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"item1" ofType:@"plist"];
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     _labelPage1.string = [dict objectForKey:@"page1"];
     _labelPage2.string = [dict objectForKey:@"page2"];
@@ -31,7 +31,7 @@
 - (void) forMoreReading{
     NSLog(@"reading");
     
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[dict objectForKey:@"URLString"]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[dict objectForKey:@"URLString1"]]];
 }
 
 @end

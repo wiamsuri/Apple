@@ -3,15 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>page1</key>
-	<string>You can take calcium  supplement. However,</string>
+	<string>Let&apos;s demystify things today.
+Shall we begin?</string>
 	<key>page2</key>
-	<string>There is a sodium-calcium 
-exchanger in the cell.  You can also gain more calcium simply by eating less salt.</string>
+	<string>Fasting cleans out your system:
+This is misleading
+
+Fish is food for brain:
+True
+</string>
 	<key>page3</key>
-	<string>The same goes if  you eat too much salt; the calcium you take in 
-will be wasted.</string>
+	<string>Cider vinegar aids
+weight loss:
+False
+
+Raw foods are more nutritious:
+
+It depends on the food</string>
 	<key>page4</key>
-	<string>For more reading:</string>
+	<string>Eating enzymes cures cancer:
+False
+
+Lecithin is a special health food:
+False</string>
 	<key>page5</key>
 	<string></string>
 	<key>URLString1</key>
