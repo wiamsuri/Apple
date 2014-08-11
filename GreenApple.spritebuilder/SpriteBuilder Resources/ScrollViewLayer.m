@@ -28,6 +28,14 @@
     _labelPage5.string = [dict objectForKey:@"page5"];
 }
 
+- (void) facebookButton{
+    NSLog(@"facebook");
+}
+
+- (void) twitterButton{
+    NSLog(@"twitter");
+}
+
 - (void) forMoreReading{
     NSLog(@"reading");
     
