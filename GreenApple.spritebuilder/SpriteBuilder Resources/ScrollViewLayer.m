@@ -7,6 +7,9 @@
 //
 
 #import "ScrollViewLayer.h"
+#import "TweetLayer.h"
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
 @implementation ScrollViewLayer{
     CCLabelTTF *_labelPage1;
@@ -59,7 +62,7 @@
             NSArray *permissions = @[@"publish_actions"];
             [PFFacebookUtils linkUser:[PFUser currentUser] permissions:permissions block:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {
-                    
+                    [self postAShareFacebook];
                 }
             }];
         }
@@ -80,11 +83,13 @@
 }
 
 - (void) postAShareFacebook{
+    
+    NSString *stringforurl = [dict objectForKey:@"URLString1"];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    @"Sharing Title", @"name",
                                    @"Caption", @"caption",
                                    @"Description", @"description",
-                                   @"https://www.google.com", @"link",
+                                   stringforurl, @"link",
                                    @"", @"picture",
                                    nil];
     
@@ -122,6 +127,43 @@
 
 - (void) twitterButton{
     NSLog(@"twitter");
+    if([PFUser currentUser] == nil){
+        [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+            if (!user) {
+                NSLog(@"Uh oh. The user cancelled the Twitter login.");
+                return;
+            } else if (user.isNew) {
+                NSLog(@"User signed up and logged in with Twitter!");
+                [self tweetKrub];
+            } else {
+                NSLog(@"User logged in with Twitter!");
+                [self tweetKrub];
+            }     
+        }];
+    }
+    else{
+        if([PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]){
+            NSLog(@"Tweet");
+            [self tweetKrub];
+        }
+        else{
+            if (![PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]) {
+                [PFTwitterUtils linkUser:[PFUser currentUser] block:^(BOOL succeeded, NSError *error) {
+                    if ([PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]) {
+                        NSLog(@"Woohoo, user logged in with Twitter!");
+                        [self tweetKrub];
+                    }
+                }];
+            }
+        }
+    }
+}
+
+- (void) tweetKrub{
+    int xpos = [[CCDirector sharedDirector] viewSize].width * 4;
+    TweetLayer *newLayer = (TweetLayer*)[CCBReader load:@"TweetLayer"];
+    newLayer.position = ccp(xpos,0);
+    [self addChild:newLayer];
 }
 
 #pragma mark reading button

@@ -35,12 +35,15 @@
     
     [Parse setApplicationId:@"uqt7zwMD2ORgmSkVYcy7bE4NyfWGMTuZ1mVtOAbr"
                   clientKey:@"x1xkFz4ucchKJqSme9cPgGnLavypVeX7ZZ1Y3Z6P"];
+    
     //analytics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     //parse init facebook parse happy
     [PFFacebookUtils initializeFacebook];
     
+    [PFTwitterUtils initializeWithConsumerKey:@"hEWDXLxd5b2acSpRJqhiMuiFp"
+                               consumerSecret:@"JmxIlnLQwXwY4dU2PlMR7BsOyyiRFlDvJdW3uv9bn2ERffCcHX"];
     
     //so ppl can see the time :)
     [[UIApplication sharedApplication] setStatusBarHidden:false];
