@@ -7,6 +7,7 @@
 //
 
 #import "CCNode.h"
+#import <Parse/Parse.h>
 
 @interface MainScene : CCNode <CCScrollViewDelegate>
 

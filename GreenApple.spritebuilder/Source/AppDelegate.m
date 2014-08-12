@@ -24,7 +24,7 @@
  */
 
 #import "cocos2d.h"
-
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 
@@ -33,7 +33,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    [Parse setApplicationId:@"uqt7zwMD2ORgmSkVYcy7bE4NyfWGMTuZ1mVtOAbr"
+                  clientKey:@"x1xkFz4ucchKJqSme9cPgGnLavypVeX7ZZ1Y3Z6P"];
+    //analytics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //parse init facebook parse happy
+    [PFFacebookUtils initializeFacebook];
+    
+    
+    //so ppl can see the time :)
     [[UIApplication sharedApplication] setStatusBarHidden:false];
+    
+    
+    
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
@@ -57,6 +71,20 @@
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    [[CCDirector sharedDirector] resume];
 }
 
 - (CCScene*) startScene
