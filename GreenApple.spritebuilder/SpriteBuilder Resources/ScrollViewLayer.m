@@ -59,6 +59,10 @@
         else{
             NSLog(@"Not Linked");
             //not link is impossible but its here anw incase
+            
+            //******************************************************************************
+            //add getting friend list permission? it cannot suggust friend to tag right now
+            //******************************************************************************
             NSArray *permissions = @[@"publish_actions"];
             [PFFacebookUtils linkUser:[PFUser currentUser] permissions:permissions block:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {

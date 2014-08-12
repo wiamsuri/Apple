@@ -28,9 +28,10 @@
     NSString *url = @" ";
     url = [url stringByAppendingString:[dict objectForKey:@"URLString1"]];
     
-    int urlLength = [url length];
+    int urlLength = (int)[url length];
     NSString *fromTextField = [_textField string];
-    int textLength = [fromTextField length];
+    int textLength = (int)[fromTextField length];
+    
     if(urlLength + textLength > 100){//urlLength + textLength > 100
         NSLog(@"toolong %i" , (urlLength + textLength));
         [_warningText runAction:[CCActionJumpBy actionWithDuration:0.8 position:ccp(0,0) height:10 jumps:2]];
