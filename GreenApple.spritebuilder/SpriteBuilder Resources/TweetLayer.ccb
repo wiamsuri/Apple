@@ -73,9 +73,9 @@
 						<array>
 							<real>0.0</real>
 							<real>0.0</real>
+							<integer>1</integer>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -86,7 +86,7 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>1</real>
+							<real>1.5</real>
 							<integer>2</integer>
 							<integer>2</integer>
 						</array>
@@ -99,7 +99,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -137,6 +137,8 @@
 						<real>0.80000001192092896</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1278,7 +1280,7 @@ which leaves you less than
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>0.20000000298023224</real>
+					<real>0.16700001060962677</real>
 					<real>360</real>
 					<integer>2</integer>
 					<integer>0</integer>
