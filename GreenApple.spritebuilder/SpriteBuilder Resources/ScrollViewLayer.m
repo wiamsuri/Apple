@@ -120,7 +120,7 @@
                                                           } else {
                                                               // User clicked the Share button
                                                               NSString *result = [NSString stringWithFormat: @"Posted story, id: %@", [urlParams valueForKey:@"post_id"]];
-                                                              //NSLog(@"result %@", result);
+                                                              NSLog(@"result %@", result);
                                                           }
                                                       }
                                                   }
