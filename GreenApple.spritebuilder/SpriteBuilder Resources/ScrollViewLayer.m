@@ -12,6 +12,7 @@
 #import <Accounts/Accounts.h>
 
 @implementation ScrollViewLayer{
+    CCNode *_page5;
     CCLabelTTF *_labelPage1;
     CCLabelTTF *_labelPage2;
     CCLabelTTF *_labelPage3;
@@ -34,30 +35,29 @@
 #pragma mark Facebook
 
 - (void) facebookButton{
-    NSLog(@"facebook");
+    //facbook button pushed
     if([PFUser currentUser] == nil){
-        NSLog(@"no username");
+        //no username
         NSArray *permissions = @[@"publish_actions"];
         [PFFacebookUtils logInWithPermissions:permissions block:^(PFUser *user, NSError *error) {
             if (!user) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+                //cancelled login :(
             } else if (user.isNew) {
-                NSLog(@"User signed up and logged in through Facebook!");
+                //signed up and logged in through Facebook
                 [self postAShareFacebook];
             } else {
-                NSLog(@"User logged in through Facebook!");
+                //logged in through Facebook
                 [self postAShareFacebook];
             }
         }];
     }
     else{
-        NSLog(@"yes username");
+        //username exist
         if([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]){
-            NSLog(@"Linked");
+            //share on fb
             [self postAShareFacebook];
         }
         else{
-            NSLog(@"Not Linked");
             //not link is impossible but its here anw incase
             
             //******************************************************************************
@@ -104,23 +104,23 @@
                                                   if (error) {
                                                       // An error occurred, we need to handle the error
                                                       // See: https://developers.facebook.com/docs/ios/errors
-                                                      NSLog(@"Error publishing story: %@", error.description);
+                                                      //NSLog(@"Error publishing story: %@", error.description);
                                                   } else {
                                                       if (result == FBWebDialogResultDialogNotCompleted) {
                                                           // User cancelled.
-                                                          NSLog(@"User cancelled.");
+                                                          //NSLog(@"User cancelled.");
                                                       } else {
                                                           // Handle the publish feed callback
                                                           NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
                                                           
                                                           if (![urlParams valueForKey:@"post_id"]) {
                                                               // User cancelled.
-                                                              NSLog(@"User cancelled.");
+                                                              //NSLog(@"User cancelled.");
                                                               
                                                           } else {
                                                               // User clicked the Share button
                                                               NSString *result = [NSString stringWithFormat: @"Posted story, id: %@", [urlParams valueForKey:@"post_id"]];
-                                                              NSLog(@"result %@", result);
+                                                              //NSLog(@"result %@", result);
                                                           }
                                                       }
                                                   }
@@ -130,31 +130,31 @@
 #pragma mark Twitter
 
 - (void) twitterButton{
-    NSLog(@"twitter");
+    //twitter
     if([PFUser currentUser] == nil){
         [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
             if (!user) {
-                NSLog(@"Uh oh. The user cancelled the Twitter login.");
+                //cancelled the Twitter login
                 return;
             } else if (user.isNew) {
-                NSLog(@"User signed up and logged in with Twitter!");
+                //signed up and logged in
                 [self tweetKrub];
             } else {
-                NSLog(@"User logged in with Twitter!");
+                //loged in
                 [self tweetKrub];
             }     
         }];
     }
     else{
         if([PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]){
-            NSLog(@"Tweet");
+            //tweet
             [self tweetKrub];
         }
         else{
             if (![PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]) {
                 [PFTwitterUtils linkUser:[PFUser currentUser] block:^(BOOL succeeded, NSError *error) {
                     if ([PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]) {
-                        NSLog(@"Woohoo, user logged in with Twitter!");
+                        //linked
                         [self tweetKrub];
                     }
                 }];
@@ -164,16 +164,16 @@
 }
 
 - (void) tweetKrub{
-    int xpos = [[CCDirector sharedDirector] viewSize].width * 4;
+    //int xpos = [[CCDirector sharedDirector] viewSize].width * 4;
     TweetLayer *newLayer = (TweetLayer*)[CCBReader load:@"TweetLayer"];
-    newLayer.position = ccp(xpos,0);
-    [self addChild:newLayer];
+    newLayer.position = ccp(0,0);
+    [_page5 addChild:newLayer];
 }
 
 #pragma mark reading button
 
 - (void) forMoreReading{
-    NSLog(@"reading");
+    //For more reading
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[dict objectForKey:@"URLString1"]]];
 }

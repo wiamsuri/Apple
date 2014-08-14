@@ -2878,7 +2878,7 @@
 				<key>displayName</key>
 				<string>Page5</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_page5</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -2943,6 +2943,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3863,8 +3865,6 @@ help you remember</string>
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
