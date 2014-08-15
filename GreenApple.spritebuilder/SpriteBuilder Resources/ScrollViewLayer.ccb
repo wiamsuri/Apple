@@ -186,7 +186,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>40</real>
+									<real>25</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -233,7 +233,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -242,7 +242,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>22</real>
+									<real>24</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -485,7 +485,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>40</real>
+									<real>25</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -532,7 +532,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -541,7 +541,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>22</real>
+									<real>24</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -784,7 +784,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>40</real>
+									<real>25</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -831,7 +831,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -840,7 +840,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>22</real>
+									<real>24</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1083,7 +1083,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>40</real>
+									<real>25</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -1130,7 +1130,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1139,7 +1139,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>22</real>
+									<real>24</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1382,7 +1382,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>40</real>
+									<real>25</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -1429,7 +1429,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1438,7 +1438,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>22</real>
+									<real>24</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1601,9 +1601,9 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>144</real>
-									<real>0.29000002145767212</real>
-									<integer>3</integer>
+									<real>120</real>
+									<real>0.40000000596046448</real>
+									<integer>0</integer>
 									<integer>0</integer>
 									<integer>2</integer>
 								</array>
@@ -1927,8 +1927,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>65</real>
-									<real>0.29000002145767212</real>
+									<real>120</real>
+									<real>0.40000000596046448</real>
 									<integer>3</integer>
 									<integer>0</integer>
 									<integer>2</integer>
@@ -2660,7 +2660,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>Helvetica-Light</string>
+										<string>HelveticaNeue-UltraLight</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2826,10 +2826,10 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>75</real>
-									<real>0.17000000178813934</real>
-									<integer>3</integer>
+									<real>0.60000002384185791</real>
+									<real>0.20000000298023224</real>
 									<integer>0</integer>
+									<integer>2</integer>
 									<integer>2</integer>
 								</array>
 							</dict>
@@ -2943,8 +2943,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3047,7 +3045,7 @@ help you remember</string>
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>HelveticaNeue-Light</string>
+								<string>HelveticaNeue-UltraLight</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -3865,6 +3863,8 @@ help you remember</string>
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

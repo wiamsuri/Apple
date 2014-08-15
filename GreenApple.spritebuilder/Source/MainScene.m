@@ -25,6 +25,52 @@
     _currentScrollView = (ScrollViewLayer*)_scrollView.contentNode;
     _scrollView.delegate = self;
     [self setupDots:_scrollView.horizontalPage];
+    [self setFireDate];
+    //[UIApplication sharedApplication].scheduledLocalNotifications = nil;
+}
+
+- (void) setFireDate{
+    NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+    if([UIApplication sharedApplication].scheduledLocalNotifications.count == 0 || [UIApplication sharedApplication].scheduledLocalNotifications == nil){
+        //make ner notification
+        NSLog(@"make new one");
+        NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+        
+        NSDateComponents *componentsForReferenceDate =
+        
+        [calendar components:(NSDayCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit ) fromDate:[NSDate date]];
+        
+        [componentsForReferenceDate setDay:12];
+        [componentsForReferenceDate setMonth:8];
+        [componentsForReferenceDate setYear:2014];
+        
+        NSDate *referenceDate = [calendar dateFromComponents:componentsForReferenceDate];
+        
+        NSDateComponents *componentsForFireDate =
+        
+        [calendar components:(NSYearCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit| NSSecondCalendarUnit ) fromDate: referenceDate];
+        
+        [componentsForFireDate setHour: 9];
+        [componentsForFireDate setMinute:0];
+        [componentsForFireDate setSecond:0];
+        
+        NSDate *fireDateOfNotification = [calendar dateFromComponents: componentsForFireDate];
+        
+        // Create the notification
+        
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        
+        notification.fireDate = fireDateOfNotification;
+        notification.timeZone = [NSTimeZone localTimeZone];
+        notification.alertBody = [NSString stringWithFormat:@"Did you know that...?"];
+        notification.alertAction = @"";
+        notification.userInfo= [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@""] forKey:@"information"];
+        notification.repeatInterval = NSDayCalendarUnit;
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        notification.applicationIconBadgeNumber = 1;
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+    }
 }
 
 - (void) scrollViewDidEndDecelerating:(CCScrollView *)scrollView{

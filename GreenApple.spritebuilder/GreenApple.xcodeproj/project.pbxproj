@@ -48,6 +48,7 @@
 		D67CC919199949EE00E0D9A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */; };
 		D68C5B59198A23DA00F3DE10 /* item1.plist in Resources */ = {isa = PBXBuildFile; fileRef = D68C5B58198A23DA00F3DE10 /* item1.plist */; };
 		D68F4E22199A7CE6007B7F5B /* TweetLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D68F4E21199A7CE6007B7F5B /* TweetLayer.m */; };
+		D6980DB3199E85F10096CE60 /* item3.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6980DB2199E85F10096CE60 /* item3.plist */; };
 		D6A21284198F146F00489334 /* ScrollViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A21283198F146F00489334 /* ScrollViewLayer.m */; };
 		D6F033C2198EC7D200F18398 /* item2.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6F033C1198EC7D200F18398 /* item2.plist */; };
 		D6F1CAC31999D05700FA166D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */; };
@@ -119,6 +120,7 @@
 		D68C5B58198A23DA00F3DE10 /* item1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item1.plist; path = Source/Plistdata/item1.plist; sourceTree = "<group>"; };
 		D68F4E20199A7CE6007B7F5B /* TweetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetLayer.h; path = "SpriteBuilder Resources/TweetLayer.h"; sourceTree = "<group>"; };
 		D68F4E21199A7CE6007B7F5B /* TweetLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetLayer.m; path = "SpriteBuilder Resources/TweetLayer.m"; sourceTree = "<group>"; };
+		D6980DB2199E85F10096CE60 /* item3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item3.plist; path = Source/Plistdata/item3.plist; sourceTree = "<group>"; };
 		D6A21282198F146F00489334 /* ScrollViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewLayer.h; path = "SpriteBuilder Resources/ScrollViewLayer.h"; sourceTree = "<group>"; };
 		D6A21283198F146F00489334 /* ScrollViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewLayer.m; path = "SpriteBuilder Resources/ScrollViewLayer.m"; sourceTree = "<group>"; };
 		D6F033C1198EC7D200F18398 /* item2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item2.plist; path = Source/Plistdata/item2.plist; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6980DB2199E85F10096CE60 /* item3.plist */,
 				D6F033C1198EC7D200F18398 /* item2.plist */,
 				D68C5B58198A23DA00F3DE10 /* item1.plist */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -367,6 +370,7 @@
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				D68C5B59198A23DA00F3DE10 /* item1.plist in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
+				D6980DB3199E85F10096CE60 /* item3.plist in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,

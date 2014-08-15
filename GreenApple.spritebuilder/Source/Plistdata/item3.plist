@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>page1</key>
+	<string>
+
+Calcium. We all know that
+
+milk contains calcium and
+
+drinking milk will make you
+
+tall. That is true. However,</string>
+	<key>page2</key>
+	<string>There is a sodium-calcium
+
+exchanger membrane in your
+
+cells. It can remove calcium
+
+from cells with sodium. 
+
+This means eating sodium,
+
+which is anything salty,
+
+will make the calcium go away.</string>
+	<key>page3</key>
+	<string>
+
+No matter how much milk
+
+you drink or calcium supplement
+
+you take, if you eat salty things, 
+
+that calcium will not be effective.</string>
+	<key>page4</key>
+	<string>
+Eating tips of the day:
+
+Know that what you know about
+
+nutrition can be true, and
+
+you will, still, not be able
+
+to benefit from it without the
+
+knowledge of the whole story</string>
+	<key>page5</key>
+	<string></string>
+	<key>URLString1</key>
+	<string>http://www.bing.com</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

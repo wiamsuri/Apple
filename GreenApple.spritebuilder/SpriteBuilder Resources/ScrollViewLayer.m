@@ -23,7 +23,7 @@
 
 - (void) didLoadFromCCB{
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item1" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"item3" ofType:@"plist"];
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     _labelPage1.string = [dict objectForKey:@"page1"];
     _labelPage2.string = [dict objectForKey:@"page2"];
