@@ -51,6 +51,8 @@
     //badge number to 0
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     
+    
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
