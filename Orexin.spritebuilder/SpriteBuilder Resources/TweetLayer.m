@@ -21,7 +21,7 @@
 }
 
 - (void) tweetThis{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item3" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"item003" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     
     NSString *bodyString = @"status=";

@@ -12,4 +12,6 @@
 
 @interface ScrollViewLayer : CCNode
 
+- (void) shrinkGradient:(float) scale;
+
 @end

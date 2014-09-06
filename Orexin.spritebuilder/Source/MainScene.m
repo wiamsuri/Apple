@@ -27,6 +27,7 @@
     [self setupDots:_scrollView.horizontalPage];
     [self setFireDate];
     //[UIApplication sharedApplication].scheduledLocalNotifications = nil;
+    self.userInteractionEnabled = true;
 }
 
 - (void) setFireDate{
@@ -73,9 +74,26 @@
     }
 }
 
+- (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    
+}
+
+- (void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
+    
+}
+
 - (void) scrollViewDidEndDecelerating:(CCScrollView *)scrollView{
     int currentPage = scrollView.horizontalPage;
     [self setupDots:currentPage];
+}
+
+- (void) scrollViewDidScroll:(CCScrollView *)scrollView{
+    CGPoint pos = scrollView.scrollPosition;
+    //NSLog(@"%f and %f", pos.x, pos.y);
+    float screenSizeW = [[CCDirector sharedDirector] viewSize].width;
+    float relative = abs( (int)pos.x % (int)screenSizeW);
+    float temp = 1 + ((relative*(relative - screenSizeW))/(screenSizeW*150));
+    [_currentScrollView shrinkGradient:temp];
 }
 
 - (void) onEnter{

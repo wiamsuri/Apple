@@ -44,13 +44,13 @@
 		D67CC90D199943EC00E0D9A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC90C199943EC00E0D9A1 /* MobileCoreServices.framework */; };
 		D67CC90F199943FD00E0D9A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC90E199943FD00E0D9A1 /* Security.framework */; };
 		D67CC9111999440D00E0D9A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9101999440D00E0D9A1 /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		D67CC9131999441900E0D9A1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9121999441900E0D9A1 /* StoreKit.framework */; };
 		D67CC919199949EE00E0D9A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */; };
-		D68C5B59198A23DA00F3DE10 /* item1.plist in Resources */ = {isa = PBXBuildFile; fileRef = D68C5B58198A23DA00F3DE10 /* item1.plist */; };
 		D68F4E22199A7CE6007B7F5B /* TweetLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D68F4E21199A7CE6007B7F5B /* TweetLayer.m */; };
-		D6980DB3199E85F10096CE60 /* item3.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6980DB2199E85F10096CE60 /* item3.plist */; };
 		D6A21284198F146F00489334 /* ScrollViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A21283198F146F00489334 /* ScrollViewLayer.m */; };
-		D6F033C2198EC7D200F18398 /* item2.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6F033C1198EC7D200F18398 /* item2.plist */; };
+		D6C107DA19BB71B20094AFF9 /* item001.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D719BB71B20094AFF9 /* item001.plist */; };
+		D6C107DB19BB71B20094AFF9 /* item002.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D819BB71B20094AFF9 /* item002.plist */; };
+		D6C107DC19BB71B20094AFF9 /* item003.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D919BB71B20094AFF9 /* item003.plist */; };
+		D6C107E519BBA4230094AFF9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C107E419BBA4230094AFF9 /* StoreKit.framework */; };
 		D6F1CAC31999D05700FA166D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +95,7 @@
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
 		B7378992180767190076A88C /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Source/MainScene.h; sourceTree = "<group>"; };
 		B7378993180767190076A88C /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = Source/MainScene.m; sourceTree = "<group>"; };
-		B77F1B2E17B978D7009739AE /* GreenApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* Orexin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orexin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -114,16 +114,16 @@
 		D67CC90C199943EC00E0D9A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D67CC90E199943FD00E0D9A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D67CC9101999440D00E0D9A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		D67CC9121999441900E0D9A1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		D68C5B58198A23DA00F3DE10 /* item1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item1.plist; path = Source/Plistdata/item1.plist; sourceTree = "<group>"; };
 		D68F4E20199A7CE6007B7F5B /* TweetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetLayer.h; path = "SpriteBuilder Resources/TweetLayer.h"; sourceTree = "<group>"; };
 		D68F4E21199A7CE6007B7F5B /* TweetLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetLayer.m; path = "SpriteBuilder Resources/TweetLayer.m"; sourceTree = "<group>"; };
-		D6980DB2199E85F10096CE60 /* item3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item3.plist; path = Source/Plistdata/item3.plist; sourceTree = "<group>"; };
 		D6A21282198F146F00489334 /* ScrollViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewLayer.h; path = "SpriteBuilder Resources/ScrollViewLayer.h"; sourceTree = "<group>"; };
 		D6A21283198F146F00489334 /* ScrollViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewLayer.m; path = "SpriteBuilder Resources/ScrollViewLayer.m"; sourceTree = "<group>"; };
-		D6F033C1198EC7D200F18398 /* item2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item2.plist; path = Source/Plistdata/item2.plist; sourceTree = "<group>"; };
+		D6C107D719BB71B20094AFF9 /* item001.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item001.plist; path = Source/Plistdata/item001.plist; sourceTree = "<group>"; };
+		D6C107D819BB71B20094AFF9 /* item002.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item002.plist; path = Source/Plistdata/item002.plist; sourceTree = "<group>"; };
+		D6C107D919BB71B20094AFF9 /* item003.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item003.plist; path = Source/Plistdata/item003.plist; sourceTree = "<group>"; };
+		D6C107E419BBA4230094AFF9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D6F1CAC01999C3F300FA166D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -133,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F1CAC31999D05700FA166D /* SystemConfiguration.framework in Frameworks */,
-				D67CC9131999441900E0D9A1 /* StoreKit.framework in Frameworks */,
 				D67CC9111999440D00E0D9A1 /* Social.framework in Frameworks */,
 				D67CC90F199943FD00E0D9A1 /* Security.framework in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
@@ -154,6 +153,7 @@
 				D67CC919199949EE00E0D9A1 /* FacebookSDK.framework in Frameworks */,
 				D67CC9021999433F00E0D9A1 /* Parse.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
+				D6C107E519BBA4230094AFF9 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,9 +171,9 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D6980DB2199E85F10096CE60 /* item3.plist */,
-				D6F033C1198EC7D200F18398 /* item2.plist */,
-				D68C5B58198A23DA00F3DE10 /* item1.plist */,
+				D6C107D719BB71B20094AFF9 /* item001.plist */,
+				D6C107D819BB71B20094AFF9 /* item002.plist */,
+				D6C107D919BB71B20094AFF9 /* item003.plist */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
@@ -230,7 +230,7 @@
 		B77F1B2F17B978D7009739AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1B2E17B978D7009739AE /* GreenApple.app */,
+				B77F1B2E17B978D7009739AE /* Orexin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,10 +238,10 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6C107E419BBA4230094AFF9 /* StoreKit.framework */,
 				D6F1CAC01999C3F300FA166D /* Twitter.framework */,
 				D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */,
 				D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */,
-				D67CC9121999441900E0D9A1 /* StoreKit.framework */,
 				D67CC9101999440D00E0D9A1 /* Social.framework */,
 				D67CC90E199943FD00E0D9A1 /* Security.framework */,
 				D67CC90C199943EC00E0D9A1 /* MobileCoreServices.framework */,
@@ -287,9 +287,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B77F1B2D17B978D7009739AE /* GreenApple */ = {
+		B77F1B2D17B978D7009739AE /* Orexin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "GreenApple" */;
+			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "Orexin" */;
 			buildPhases = (
 				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
@@ -301,9 +301,9 @@
 			dependencies = (
 				B7378989180764180076A88C /* PBXTargetDependency */,
 			);
-			name = GreenApple;
+			name = Orexin;
 			productName = Example;
-			productReference = B77F1B2E17B978D7009739AE /* GreenApple.app */;
+			productReference = B77F1B2E17B978D7009739AE /* Orexin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -321,11 +321,14 @@
 							com.apple.GameCenter = {
 								enabled = 0;
 							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
 						};
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "GreenApple" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "Orexin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -343,7 +346,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				B77F1B2D17B978D7009739AE /* GreenApple */,
+				B77F1B2D17B978D7009739AE /* Orexin */,
 			);
 		};
 /* End PBXProject section */
@@ -368,19 +371,19 @@
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
-				D68C5B59198A23DA00F3DE10 /* item1.plist in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
-				D6980DB3199E85F10096CE60 /* item3.plist in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				D6C107DA19BB71B20094AFF9 /* item001.plist in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				D6C107DC19BB71B20094AFF9 /* item003.plist in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				D6C107DB19BB71B20094AFF9 /* item002.plist in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
-				D6F033C2198EC7D200F18398 /* item2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +523,7 @@
 					"-lsqlite3",
 					"-ObjC",
 				);
-				PRODUCT_NAME = GreenApple;
+				PRODUCT_NAME = Orexin;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -556,7 +559,7 @@
 					"-lsqlite3",
 					"-ObjC",
 				);
-				PRODUCT_NAME = GreenApple;
+				PRODUCT_NAME = Orexin;
 				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -566,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "GreenApple" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "Orexin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,
@@ -575,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "GreenApple" */ = {
+		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "Orexin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,

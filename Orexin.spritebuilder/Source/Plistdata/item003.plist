@@ -5,6 +5,7 @@
 	<key>page1</key>
 	<string>
 
+
 Calcium. We all know that
 
 milk contains calcium and
@@ -13,7 +14,8 @@ drinking milk will make you
 
 tall. That is true. However,</string>
 	<key>page2</key>
-	<string>There is a sodium-calcium
+	<string>
+There is a sodium-calcium
 
 exchanger membrane in your
 
@@ -29,6 +31,7 @@ will make the calcium go away.</string>
 	<key>page3</key>
 	<string>
 
+
 No matter how much milk
 
 you drink or calcium supplement
@@ -38,6 +41,7 @@ you take, if you eat salty things,
 that calcium will not be effective.</string>
 	<key>page4</key>
 	<string>
+
 Eating tips of the day:
 
 Know that what you know about
@@ -52,7 +56,7 @@ knowledge of the whole story</string>
 	<key>page5</key>
 	<string></string>
 	<key>URLString1</key>
-	<string>http://www.bing.com</string>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>
 	<string></string>
 </dict>

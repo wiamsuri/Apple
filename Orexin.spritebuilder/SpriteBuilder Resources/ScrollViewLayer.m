@@ -12,24 +12,83 @@
 #import <Accounts/Accounts.h>
 
 @implementation ScrollViewLayer{
+    CCNode *_page1;
+    CCNode *_page2;
+    CCNode *_page3;
+    CCNode *_page4;
     CCNode *_page5;
+    CCNode *_page6;
+    CCNode *_ratingNode;
+    CCNode *_nodeForStars;
+    CCSprite *_star1;
+    CCSprite *_star2;
+    CCSprite *_star3;
+    CCSprite *_star4;
+    CCSprite *_star5;
+    int stars;
+
     CCLabelTTF *_labelPage1;
     CCLabelTTF *_labelPage2;
     CCLabelTTF *_labelPage3;
     CCLabelTTF *_labelPage4;
     CCLabelTTF *_labelPage5;
     NSDictionary *dict;
+    CCNodeGradient* _gradient1;
 }
 
 - (void) didLoadFromCCB{
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item3" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"item003" ofType:@"plist"];
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     _labelPage1.string = [dict objectForKey:@"page1"];
     _labelPage2.string = [dict objectForKey:@"page2"];
     _labelPage3.string = [dict objectForKey:@"page3"];
     _labelPage4.string = [dict objectForKey:@"page4"];
     _labelPage5.string = [dict objectForKey:@"page5"];
+    self.userInteractionEnabled = true;
+    
+    stars = 5;
+}
+
+- (void) shrinkGradient:(float) scale{
+    _page1.scale = scale;
+    _page2.scale = scale;
+    _page3.scale = scale;
+    _page4.scale = scale;
+    _page5.scale = scale;
+    _page6.scale = scale;
+}
+
+- (void) ratingButton{
+    NSLog(@"rate %i", stars);
+    NSDictionary *dimensions = @{@"item": [NSString stringWithFormat:@"%i",3],@"rating": [NSString stringWithFormat:@"%i",stars]};
+    [PFAnalytics trackEvent:@"itemandrating" dimensions:dimensions];
+    _ratingNode.visible = false;
+}
+
+- (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    CGPoint pos = [touch locationInNode:_nodeForStars];
+    //NSLog(@"%f",pos.x);
+    [self determineStars:pos];
+}
+
+- (void) determineStars:(CGPoint) location{
+    if(location.x > 0 && location.x < 250){
+        if(location.y >0 && location.y < 50){
+            stars = (int)(location.x / 50) +1;
+            NSLog(@"%i", stars);
+            int s = 1;
+            for(CCSprite *st in _nodeForStars.children){
+                if(s<=stars){
+                    [st setColor:[CCColor colorWithRed:1 green:1 blue:1]];
+                }
+                else{
+                    [st setColor:[CCColor colorWithRed:0.5 green:0.5 blue:0.5]];
+                }
+                s++;
+            }
+        }
+    }
 }
 
 #pragma mark Facebook
