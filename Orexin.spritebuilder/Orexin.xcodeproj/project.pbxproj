@@ -36,6 +36,9 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		D610A95619F2F26100D156D7 /* ScrollViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D610A95319F2F26100D156D7 /* ScrollViewLayer.m */; };
+		D610A95719F2F26100D156D7 /* TweetLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D610A95519F2F26100D156D7 /* TweetLayer.m */; };
+		D610A95A19F2F54A00D156D7 /* FirstStart.m in Sources */ = {isa = PBXBuildFile; fileRef = D610A95919F2F54A00D156D7 /* FirstStart.m */; };
 		D67CC9021999433F00E0D9A1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9011999433F00E0D9A1 /* Parse.framework */; };
 		D67CC9051999438F00E0D9A1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9041999438F00E0D9A1 /* Accounts.framework */; };
 		D67CC9071999439D00E0D9A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9061999439D00E0D9A1 /* CFNetwork.framework */; };
@@ -45,8 +48,6 @@
 		D67CC90F199943FD00E0D9A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC90E199943FD00E0D9A1 /* Security.framework */; };
 		D67CC9111999440D00E0D9A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9101999440D00E0D9A1 /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D67CC919199949EE00E0D9A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */; };
-		D68F4E22199A7CE6007B7F5B /* TweetLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D68F4E21199A7CE6007B7F5B /* TweetLayer.m */; };
-		D6A21284198F146F00489334 /* ScrollViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A21283198F146F00489334 /* ScrollViewLayer.m */; };
 		D6C107DA19BB71B20094AFF9 /* item001.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D719BB71B20094AFF9 /* item001.plist */; };
 		D6C107DB19BB71B20094AFF9 /* item002.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D819BB71B20094AFF9 /* item002.plist */; };
 		D6C107DC19BB71B20094AFF9 /* item003.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D919BB71B20094AFF9 /* item003.plist */; };
@@ -106,6 +107,12 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		D610A95219F2F26100D156D7 /* ScrollViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewLayer.h; path = Source/ScrollViewLayer.h; sourceTree = "<group>"; };
+		D610A95319F2F26100D156D7 /* ScrollViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewLayer.m; path = Source/ScrollViewLayer.m; sourceTree = "<group>"; };
+		D610A95419F2F26100D156D7 /* TweetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetLayer.h; path = Source/TweetLayer.h; sourceTree = "<group>"; };
+		D610A95519F2F26100D156D7 /* TweetLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetLayer.m; path = Source/TweetLayer.m; sourceTree = "<group>"; };
+		D610A95819F2F54A00D156D7 /* FirstStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstStart.h; path = Source/FirstStart.h; sourceTree = "<group>"; };
+		D610A95919F2F54A00D156D7 /* FirstStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstStart.m; path = Source/FirstStart.m; sourceTree = "<group>"; };
 		D67CC9011999433F00E0D9A1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D67CC9041999438F00E0D9A1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D67CC9061999439D00E0D9A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -116,10 +123,6 @@
 		D67CC9101999440D00E0D9A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		D68F4E20199A7CE6007B7F5B /* TweetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetLayer.h; path = "SpriteBuilder Resources/TweetLayer.h"; sourceTree = "<group>"; };
-		D68F4E21199A7CE6007B7F5B /* TweetLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetLayer.m; path = "SpriteBuilder Resources/TweetLayer.m"; sourceTree = "<group>"; };
-		D6A21282198F146F00489334 /* ScrollViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewLayer.h; path = "SpriteBuilder Resources/ScrollViewLayer.h"; sourceTree = "<group>"; };
-		D6A21283198F146F00489334 /* ScrollViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewLayer.m; path = "SpriteBuilder Resources/ScrollViewLayer.m"; sourceTree = "<group>"; };
 		D6C107D719BB71B20094AFF9 /* item001.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item001.plist; path = Source/Plistdata/item001.plist; sourceTree = "<group>"; };
 		D6C107D819BB71B20094AFF9 /* item002.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item002.plist; path = Source/Plistdata/item002.plist; sourceTree = "<group>"; };
 		D6C107D919BB71B20094AFF9 /* item003.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item003.plist; path = Source/Plistdata/item003.plist; sourceTree = "<group>"; };
@@ -171,6 +174,10 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D610A95219F2F26100D156D7 /* ScrollViewLayer.h */,
+				D610A95319F2F26100D156D7 /* ScrollViewLayer.m */,
+				D610A95419F2F26100D156D7 /* TweetLayer.h */,
+				D610A95519F2F26100D156D7 /* TweetLayer.m */,
 				D6C107D719BB71B20094AFF9 /* item001.plist */,
 				D6C107D819BB71B20094AFF9 /* item002.plist */,
 				D6C107D919BB71B20094AFF9 /* item003.plist */,
@@ -178,10 +185,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
-				D6A21282198F146F00489334 /* ScrollViewLayer.h */,
-				D6A21283198F146F00489334 /* ScrollViewLayer.m */,
-				D68F4E20199A7CE6007B7F5B /* TweetLayer.h */,
-				D68F4E21199A7CE6007B7F5B /* TweetLayer.m */,
+				D610A95819F2F54A00D156D7 /* FirstStart.h */,
+				D610A95919F2F54A00D156D7 /* FirstStart.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -414,8 +419,9 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				D6A21284198F146F00489334 /* ScrollViewLayer.m in Sources */,
-				D68F4E22199A7CE6007B7F5B /* TweetLayer.m in Sources */,
+				D610A95619F2F26100D156D7 /* ScrollViewLayer.m in Sources */,
+				D610A95719F2F26100D156D7 /* TweetLayer.m in Sources */,
+				D610A95A19F2F54A00D156D7 /* FirstStart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

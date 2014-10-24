@@ -94,7 +94,7 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"MainScene"];
+    return [CCBReader loadAsScene:@"FirstStart"];
 }
 
 @end
