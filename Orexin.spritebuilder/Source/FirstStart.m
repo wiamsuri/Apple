@@ -145,17 +145,19 @@
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic6"]){
         [_nodecolor6 setOpacity:0.2];
         [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic6"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        //[[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor6 setOpacity:0.4];// opacity = 0.4;
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic6"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        //[[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) startButton{
-    NSLog(@"start");
+    //NSLog(@"start");
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"FirstStartpaileaw"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     CCScene * newscene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:newscene];
 }

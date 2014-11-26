@@ -55,14 +55,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb295567990621545</string>
+				<string>fb968285103201540</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
-	<string>295567990621545</string>
+	<string>968285103201540</string>
 	<key>FacebookDisplayName</key>
 	<string>Orexin</string>
 	<key>LSRequiresIPhoneOS</key>

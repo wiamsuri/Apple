@@ -94,7 +94,10 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"FirstStart"];
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"FirstStartpaileaw"])
+        return [CCBReader loadAsScene:@"FirstStart"];
+    else
+        return [CCBReader loadAsScene:@"MainScene"];
 }
 
 @end

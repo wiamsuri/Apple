@@ -67,9 +67,9 @@
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-    CGPoint pos = [touch locationInNode:_nodeForStars];
+    //CGPoint pos = [touch locationInNode:_nodeForStars];
     //NSLog(@"%f",pos.x);
-    [self determineStars:pos];
+    //[self determineStars:pos];
 }
 
 - (void) determineStars:(CGPoint) location{
