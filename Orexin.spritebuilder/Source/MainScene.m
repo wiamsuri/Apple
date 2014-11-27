@@ -31,10 +31,10 @@
 }
 
 - (void) setFireDate{
-    NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+    //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
     if([UIApplication sharedApplication].scheduledLocalNotifications.count == 0 || [UIApplication sharedApplication].scheduledLocalNotifications == nil){
         //make ner notification
-        NSLog(@"make new one");
+        //NSLog(@"make new one");
         NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
         
         NSDateComponents *componentsForReferenceDate =
@@ -70,7 +70,7 @@
         notification.soundName = UILocalNotificationDefaultSoundName;
         notification.applicationIconBadgeNumber = 1;
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-        NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+        //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
     }
 }
 

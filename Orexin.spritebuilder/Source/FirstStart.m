@@ -51,7 +51,7 @@
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-    NSLog(@"lol" );
+    //NSLog(@"lol" );
     if(onetime){
         [_layerPleaseSelect runAction:[CCActionSpawn actions:[CCActionFadeOut actionWithDuration:1],[CCActionMoveBy actionWithDuration:1 position:ccp(0,-500)], nil]];
         [_textPlease runAction:[CCActionSpawn actions:[CCActionFadeOut actionWithDuration:1],[CCActionMoveBy actionWithDuration:1 position:ccp(0,-500)], nil]];
