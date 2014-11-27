@@ -46,7 +46,7 @@
                                consumerSecret:@"JmxIlnLQwXwY4dU2PlMR7BsOyyiRFlDvJdW3uv9bn2ERffCcHX"];
     
     //so ppl can see the time :)
-    [[UIApplication sharedApplication] setStatusBarHidden:false];
+    //[[UIApplication sharedApplication] setStatusBarHidden:false];
     
     //badge number to 0
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
