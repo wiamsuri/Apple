@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>seen</key>
-	<true/>
+	<false/>
 	<key>category</key>
 	<integer>1</integer>
 	<key>callUpNumber</key>

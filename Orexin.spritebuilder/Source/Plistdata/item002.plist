@@ -1,22 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>numberOfPage</key>
-	<integer>4</integer>
-	<key>page1</key>
-	<string>Page 1 enter text here OAD</string>
-	<key>page2</key>
-	<string>Page 2 enter text here OAD</string>
-	<key>page3</key>
-	<string>Page 3 enter text here OAD</string>
-	<key>page4</key>
-	<string>Page 4 enter text here OAD</string>
-	<key>page5</key>
-	<string>Page 5 enter text here OAD</string>
-	<key>URLString1</key>
-	<string>http://www.bing.com</string>
-	<key>URLString2</key>
-	<string></string>
-</dict>
-</plist>

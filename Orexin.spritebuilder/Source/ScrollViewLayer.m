@@ -34,7 +34,7 @@
     // Path to the plist (in the application bundle)
     NSString *path = [[NSBundle mainBundle] pathForResource:@"item003" ofType:@"plist"];
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    
+    self.userInteractionEnabled = true;
     //get number of pages and set up
     NSNumber * numbpages = [dict objectForKey:@"numberOfPage"];
     int x = numbpages.intValue;
@@ -74,7 +74,16 @@
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-    
+    NSNumber * hehe = [dict objectForKey:@"seen"];
+    NSLog(@"loll");
+    hehe = 0;
+    [dict setValue:hehe forKey:@"seen"];
+    //[dict setValue:true forKey:@"seen"];
+}
+
+- (void) toOldFacts{
+    CCScene * newscene = [CCBReader loadAsScene:@"OldFact"];
+    [[CCDirector sharedDirector] replaceScene:newscene];
 }
 
 - (void) determineStars:(CGPoint) location{

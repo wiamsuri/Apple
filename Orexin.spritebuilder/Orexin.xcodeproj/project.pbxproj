@@ -41,6 +41,10 @@
 		D610A95A19F2F54A00D156D7 /* FirstStart.m in Sources */ = {isa = PBXBuildFile; fileRef = D610A95919F2F54A00D156D7 /* FirstStart.m */; };
 		D630A1ED1A267F5C0021ECB9 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = D630A1EC1A267F5C0021ECB9 /* Page.m */; };
 		D630A1FC1A27D2B40021ECB9 /* SmallBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D630A1FB1A27D2B40021ECB9 /* SmallBox.m */; };
+		D630A2031A292DB30021ECB9 /* OldFact.m in Sources */ = {isa = PBXBuildFile; fileRef = D630A2021A292DB30021ECB9 /* OldFact.m */; };
+		D630A2061A292E9D0021ECB9 /* LayerForOldFact.m in Sources */ = {isa = PBXBuildFile; fileRef = D630A2051A292E9D0021ECB9 /* LayerForOldFact.m */; };
+		D630A2091A29367E0021ECB9 /* item003.plist in Resources */ = {isa = PBXBuildFile; fileRef = D630A2081A29367E0021ECB9 /* item003.plist */; };
+		D630A20C1A293D080021ECB9 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = D630A20B1A293D080021ECB9 /* Item.m */; };
 		D67CC9021999433F00E0D9A1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9011999433F00E0D9A1 /* Parse.framework */; };
 		D67CC9051999438F00E0D9A1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9041999438F00E0D9A1 /* Accounts.framework */; };
 		D67CC9071999439D00E0D9A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9061999439D00E0D9A1 /* CFNetwork.framework */; };
@@ -50,9 +54,6 @@
 		D67CC90F199943FD00E0D9A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC90E199943FD00E0D9A1 /* Security.framework */; };
 		D67CC9111999440D00E0D9A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9101999440D00E0D9A1 /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D67CC919199949EE00E0D9A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */; };
-		D6C107DA19BB71B20094AFF9 /* item001.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D719BB71B20094AFF9 /* item001.plist */; };
-		D6C107DB19BB71B20094AFF9 /* item002.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D819BB71B20094AFF9 /* item002.plist */; };
-		D6C107DC19BB71B20094AFF9 /* item003.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C107D919BB71B20094AFF9 /* item003.plist */; };
 		D6C107E519BBA4230094AFF9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C107E419BBA4230094AFF9 /* StoreKit.framework */; };
 		D6F1CAC31999D05700FA166D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -140,6 +141,13 @@
 		D630A1EC1A267F5C0021ECB9 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Page.m; path = Source/Page.m; sourceTree = "<group>"; };
 		D630A1FA1A27D2B40021ECB9 /* SmallBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmallBox.h; path = Source/SmallBox.h; sourceTree = "<group>"; };
 		D630A1FB1A27D2B40021ECB9 /* SmallBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallBox.m; path = Source/SmallBox.m; sourceTree = "<group>"; };
+		D630A2011A292DB30021ECB9 /* OldFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OldFact.h; path = Source/OldFact.h; sourceTree = "<group>"; };
+		D630A2021A292DB30021ECB9 /* OldFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OldFact.m; path = Source/OldFact.m; sourceTree = "<group>"; };
+		D630A2041A292E9D0021ECB9 /* LayerForOldFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerForOldFact.h; path = Source/LayerForOldFact.h; sourceTree = "<group>"; };
+		D630A2051A292E9D0021ECB9 /* LayerForOldFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerForOldFact.m; path = Source/LayerForOldFact.m; sourceTree = "<group>"; };
+		D630A2081A29367E0021ECB9 /* item003.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item003.plist; path = Source/Plistdata/item003.plist; sourceTree = "<group>"; };
+		D630A20A1A293D080021ECB9 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Source/Item.h; sourceTree = "<group>"; };
+		D630A20B1A293D080021ECB9 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Source/Item.m; sourceTree = "<group>"; };
 		D67CC9011999433F00E0D9A1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D67CC9041999438F00E0D9A1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D67CC9061999439D00E0D9A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -150,9 +158,6 @@
 		D67CC9101999440D00E0D9A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D67CC9141999441F00E0D9A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D67CC918199949EE00E0D9A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		D6C107D719BB71B20094AFF9 /* item001.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item001.plist; path = Source/Plistdata/item001.plist; sourceTree = "<group>"; };
-		D6C107D819BB71B20094AFF9 /* item002.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item002.plist; path = Source/Plistdata/item002.plist; sourceTree = "<group>"; };
-		D6C107D919BB71B20094AFF9 /* item003.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = item003.plist; path = Source/Plistdata/item003.plist; sourceTree = "<group>"; };
 		D6C107E419BBA4230094AFF9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D6F1CAC01999C3F300FA166D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -203,21 +208,25 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				D610A95819F2F54A00D156D7 /* FirstStart.h */,
+				D610A95919F2F54A00D156D7 /* FirstStart.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
-				D630A1FA1A27D2B40021ECB9 /* SmallBox.h */,
-				D630A1FB1A27D2B40021ECB9 /* SmallBox.m */,
-				D630A1EB1A267F5C0021ECB9 /* Page.h */,
-				D630A1EC1A267F5C0021ECB9 /* Page.m */,
+				D630A2011A292DB30021ECB9 /* OldFact.h */,
+				D630A2021A292DB30021ECB9 /* OldFact.m */,
 				D610A95219F2F26100D156D7 /* ScrollViewLayer.h */,
 				D610A95319F2F26100D156D7 /* ScrollViewLayer.m */,
 				D610A95419F2F26100D156D7 /* TweetLayer.h */,
 				D610A95519F2F26100D156D7 /* TweetLayer.m */,
-				D610A95819F2F54A00D156D7 /* FirstStart.h */,
-				D610A95919F2F54A00D156D7 /* FirstStart.m */,
-				D6C107D719BB71B20094AFF9 /* item001.plist */,
-				D6C107D819BB71B20094AFF9 /* item002.plist */,
-				D6C107D919BB71B20094AFF9 /* item003.plist */,
+				D630A2041A292E9D0021ECB9 /* LayerForOldFact.h */,
+				D630A2051A292E9D0021ECB9 /* LayerForOldFact.m */,
+				D630A20A1A293D080021ECB9 /* Item.h */,
+				D630A20B1A293D080021ECB9 /* Item.m */,
+				D630A1FA1A27D2B40021ECB9 /* SmallBox.h */,
+				D630A1FB1A27D2B40021ECB9 /* SmallBox.m */,
+				D630A1EB1A267F5C0021ECB9 /* Page.h */,
+				D630A1EC1A267F5C0021ECB9 /* Page.m */,
+				D630A2071A2936610021ECB9 /* plistdata */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -321,6 +330,14 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D630A2071A2936610021ECB9 /* plistdata */ = {
+			isa = PBXGroup;
+			children = (
+				D630A2081A29367E0021ECB9 /* item003.plist */,
+			);
+			name = plistdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,15 +450,13 @@
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
-				D6C107DA19BB71B20094AFF9 /* item001.plist in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
+				D630A2091A29367E0021ECB9 /* item003.plist in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
-				D6C107DC19BB71B20094AFF9 /* item003.plist in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
-				D6C107DB19BB71B20094AFF9 /* item002.plist in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
@@ -476,9 +491,12 @@
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				D610A95619F2F26100D156D7 /* ScrollViewLayer.m in Sources */,
+				D630A2031A292DB30021ECB9 /* OldFact.m in Sources */,
 				D610A95719F2F26100D156D7 /* TweetLayer.m in Sources */,
 				D610A95A19F2F54A00D156D7 /* FirstStart.m in Sources */,
+				D630A20C1A293D080021ECB9 /* Item.m in Sources */,
 				D630A1FC1A27D2B40021ECB9 /* SmallBox.m in Sources */,
+				D630A2061A292E9D0021ECB9 /* LayerForOldFact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

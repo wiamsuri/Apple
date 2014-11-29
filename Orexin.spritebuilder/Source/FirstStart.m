@@ -7,6 +7,7 @@
 //
 
 #import "FirstStart.h"
+#import "Item.h"
 
 @implementation FirstStart{
     CCNodeColor * _nodecolor1;
@@ -29,6 +30,28 @@
 - (void) didLoadFromCCB{
     self.userInteractionEnabled = true;
     onetime = true;
+    [self setupForpush];
+    [self setupArray];
+}
+
+- (void) setupArray{
+    NSMutableArray * newArray = [[NSMutableArray alloc] init];
+
+    
+    for(int i = 0; i < 10; i++){
+        Item * temp = [[Item alloc] init];
+        [temp setSeen:false];
+        [temp setBookmarked:false];
+        [temp setName:@"name here"];
+        [temp setcallupname:@"caller here"];
+        
+        [newArray addObject:temp];
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"arrayOfItemCaller"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void) setupForpush{
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic1"];
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic2"];
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic3"];
