@@ -7,7 +7,7 @@
 //
 
 #import "FirstStart.h"
-#import "Item.h"
+//#import "Item.h"
 
 @implementation FirstStart{
     CCNodeColor * _nodecolor1;
@@ -31,33 +31,16 @@
     self.userInteractionEnabled = true;
     onetime = true;
     [self setupForpush];
-    [self setupArray];
-}
-
-- (void) setupArray{
-    NSMutableArray * newArray = [[NSMutableArray alloc] init];
-
     
-    for(int i = 0; i < 10; i++){
-        Item * temp = [[Item alloc] init];
-        [temp setSeen:false];
-        [temp setBookmarked:false];
-        [temp setName:@"name here"];
-        [temp setcallupname:@"caller here"];
-        
-        [newArray addObject:temp];
-    }
-    [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"arrayOfItemCaller"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void) setupForpush{
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic1"];
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic2"];
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic3"];
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic4"];
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic5"];
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic6"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic0"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic1"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic2"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic3"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic4"];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic5"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [_bu1 setEnabled:false];
     [_bu2 setEnabled:false];
@@ -100,85 +83,131 @@
 
 - (void) button1{
     //NSLog(@"button1");
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic1"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic0"]){
         [_nodecolor1 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic1"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic0"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor1 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic1"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic0"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) button2{
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic2"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic1"]){
         [_nodecolor2 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic2"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic1"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor2 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic2"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic1"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) button3{
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic3"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic2"]){
         [_nodecolor3 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic3"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic2"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor3 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic3"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic2"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) button4{
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic4"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic3"]){
         [_nodecolor4 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic4"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic3"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor4 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic4"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic3"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) button5{
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic5"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic4"]){
         [_nodecolor5 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic5"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic4"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor5 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic5"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic4"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) button6{
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic6"]){
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic5"]){
         [_nodecolor6 setOpacity:0.2];
-        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic6"];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"topic5"];
         //[[NSUserDefaults standardUserDefaults] synchronize];
     }
     else{
         [_nodecolor6 setOpacity:0.4];// opacity = 0.4;
-        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic6"];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"topic5"];
         //[[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void) startButton{
     //NSLog(@"start");
+    
+    
+    NSInteger i = 0;
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic0"]){
+        i = 0;
+    }else {
+        if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic1"]){
+            i = 1;
+        }
+        else{
+            if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic2"]){
+                i = 2;
+            }
+            else{
+                if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic3"]){
+                    i = 3;
+                }
+                else{
+                    if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic4"]){
+                        i = 4;
+                    }
+                    else{
+                        if([[NSUserDefaults standardUserDefaults] boolForKey:@"topic5"]){
+                            i = 5;
+                            
+                        }
+                        else{
+                            //invalid!!
+                            //NSLog(@"NOTHING AT ALL");
+                            CCScene * newscene = [CCBReader loadAsScene:@"FirstStart"];
+                            [[CCDirector sharedDirector] replaceScene:newscene];
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    NSInteger j = 0;
+    //NSString * temp = [NSString stringWithFormat:@"item%i-%i", i,j];
+    //NSLog(temp);
+    //[[NSUserDefaults standardUserDefaults] setValue:temp forKey:@"CurrentItem"];
+    //NSInteger int1 = i;
+
+    [[NSUserDefaults standardUserDefaults] setInteger:i forKey:@"ITEM INT I"];
+    [[NSUserDefaults standardUserDefaults] setInteger:j forKey:@"ITEM INT J"];
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"FirstStartpaileaw"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     CCScene * newscene = [CCBReader loadAsScene:@"MainScene"];

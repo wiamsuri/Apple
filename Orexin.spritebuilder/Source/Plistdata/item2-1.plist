@@ -5,68 +5,74 @@
 	<key>seen</key>
 	<false/>
 	<key>category</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>callUpNumber</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>bookmarked</key>
 	<false/>
 	<key>name</key>
-	<string>Calcium vs. Sodium</string>
+	<string>Crash Diets Deficient in Nutrients</string>
 	<key>numberOfPage</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>page1</key>
 	<string>
+Crash diets are usually
 
+deficient in some nutrients.
 
-Calcium. We all know that
-
-milk contains calcium and
-
-drinking milk will make you
-
-tall. That is true. However,</string>
+This may be true.</string>
 	<key>page2</key>
 	<string>
-There is a sodium-calcium
+It is difficult to obtain
 
-exchanger membrane in your
+all the essential nutrients
 
-cells. It can remove calcium
+from food alone if we consume
 
-from cells with sodium. 
+less than 1000 kilocalories
 
-This means eating sodium,
+per day, and certainly if
 
-which is anything salty,
+we have less than
 
-will make the calcium go away.</string>
+800 kilocalories.</string>
 	<key>page3</key>
 	<string>
+The nutrients which may
 
+be lacking in a crash diet
 
-No matter how much milk
+are protein, the vitamins
 
-you drink or calcium supplement
+folacin, vitamin B-1, 
 
-you take, if you eat salty things, 
+vitamin B-2 and vitamin B-6,
 
-that calcium will not be effective.</string>
+the minerals potassium,
+
+magnesium and zinc,
+
+and dietary fibre.</string>
 	<key>page4</key>
-	<string>
+	<string>It is possible to increase
 
-Eating tips of the day:
+the nutritional quality of
 
-Know that what you know about
+low energy diets by including
 
-nutrition can be true, and
+nutrient-rich foods like liver,
 
-you will, still, not be able
+wheat germ and yeast. Energy
 
-to benefit from it without the
+intakes lower than 800 kilocalories
 
-knowledge of the whole story</string>
-	<key>page5</key>
-	<string></string>
+per day must be accompanied by
+
+nutrient supplements or be provided
+
+by formula feeds, under
+
+medical supervision.</string>
 	<key>URLString1</key>
 	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>

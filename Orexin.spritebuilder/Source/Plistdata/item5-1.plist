@@ -5,68 +5,67 @@
 	<key>seen</key>
 	<false/>
 	<key>category</key>
-	<integer>1</integer>
+	<integer>6</integer>
 	<key>callUpNumber</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>bookmarked</key>
 	<false/>
 	<key>name</key>
-	<string>Calcium vs. Sodium</string>
+	<string>Fasting cleans out your system</string>
 	<key>numberOfPage</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>page1</key>
 	<string>
+This is misleading.
 
+Fasting does not
 
-Calcium. We all know that
-
-milk contains calcium and
-
-drinking milk will make you
-
-tall. That is true. However,</string>
+cleans out your system.</string>
 	<key>page2</key>
 	<string>
-There is a sodium-calcium
+When we fast, there may be
 
-exchanger membrane in your
+less bowel action because
 
-cells. It can remove calcium
+there is less dietary fibre
 
-from cells with sodium. 
+and starch resistant to
 
-This means eating sodium,
+small intestinal digestion
 
-which is anything salty,
-
-will make the calcium go away.</string>
+to enter the large bowel. </string>
 	<key>page3</key>
 	<string>
+It is here that fermentation,
 
+increased microbial bulk and
 
-No matter how much milk
+water retention in
 
-you drink or calcium supplement
+faeces occurs. These processes
 
-you take, if you eat salty things, 
+are important for the healthy
 
-that calcium will not be effective.</string>
+function of the large bowel
+
+and fasting for long periods
+
+denies this function. </string>
 	<key>page4</key>
 	<string>
+A day or so of minimal
 
-Eating tips of the day:
+food intake, while maintaining
 
-Know that what you know about
+adequate fluid intake, may
 
-nutrition can be true, and
+allow the body to readjust
 
-you will, still, not be able
+excessive appetite or readjust
 
-to benefit from it without the
+its energy balance. But this is
 
-knowledge of the whole story</string>
-	<key>page5</key>
-	<string></string>
+ßnot latter of cleaning the system.</string>
 	<key>URLString1</key>
 	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>

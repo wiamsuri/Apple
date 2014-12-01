@@ -26,6 +26,7 @@
 #import "cocos2d.h"
 #import <Parse/Parse.h>
 #import "AppDelegate.h"
+#import "Item.h"
 #import "CCBuilderReader.h"
 
 @implementation AppController
@@ -51,7 +52,13 @@
     //badge number to 0
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"FirstStartForArray"]){
+        [self setupArray];
+    }
     
+    [self checkForNewFact];
+    [self setFireDate];
+    [self checkIn];
     
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
@@ -89,7 +96,57 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    
     [[CCDirector sharedDirector] resume];
+    
+    [self checkForNewFact];
+    
+    [self checkIn];
+}
+
+- (void) checkIn{
+    NSDate *now = [NSDate date];
+    [[NSUserDefaults standardUserDefaults] setObject:now forKey:@"lastSeen"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void) checkForNewFact{
+    //IF SHOULD PRESENT NEW FACT
+    //check by the last check in time @"lastSeen"
+        //CALL THE ITEM NEXT ITEM
+    //ELSE DO NOTHING
+}
+
+- (void) setupArray{
+    NSMutableArray * newArray = [[NSMutableArray alloc] init];
+    //NSDictionary * newdict = [[NSDictionary alloc] init];
+    
+    //NSHashTable * newhash = [[NSHashTable alloc] init];
+    for(int i = 0; i < 6; i++){
+        Item * hehe = [[Item alloc] init];
+        int maxInsection = [hehe numItemInSec:i];
+        for(int j = 0; j < maxInsection; j++){
+            
+            NSString * temp = [NSString stringWithFormat:@"item%i-%i", i,j];
+            NSString * path = [[NSBundle mainBundle] pathForResource:temp ofType:@"plist"];
+            NSDictionary * dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+            
+            
+            NSDictionary * newdict;
+            //set up dict
+            newdict = [[NSDictionary alloc] initWithObjectsAndKeys:[dict objectForKey:@"name"],@"name",[NSNumber numberWithInt:i],@"i-factor",[NSNumber numberWithInt:j],@"j-factor",[NSNumber numberWithBool:false], @"seen",[NSNumber numberWithBool:false], @"bookmarked",nil];
+            //add to array
+            [newArray addObject:newdict];
+            
+        }
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"arrayOfItemCaller"];
+    NSLog(@"%li", (long)[newArray count]);
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"FirstStartForArray"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
 }
 
 - (CCScene*) startScene
@@ -98,6 +155,50 @@
         return [CCBReader loadAsScene:@"FirstStart"];
     else
         return [CCBReader loadAsScene:@"MainScene"];
+}
+
+- (void) setFireDate{
+    //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+    if([UIApplication sharedApplication].scheduledLocalNotifications.count == 0 || [UIApplication sharedApplication].scheduledLocalNotifications == nil){
+        //make ner notification
+        //NSLog(@"make new one");
+        NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+        
+        NSDateComponents *componentsForReferenceDate =
+        
+        [calendar components:(NSCalendarUnitDay | NSCalendarUnitYear | NSCalendarUnitMonth ) fromDate:[NSDate date]];
+        
+        [componentsForReferenceDate setDay:12];
+        [componentsForReferenceDate setMonth:8];
+        [componentsForReferenceDate setYear:2014];
+        
+        NSDate *referenceDate = [calendar dateFromComponents:componentsForReferenceDate];
+        
+        NSDateComponents *componentsForFireDate =
+        
+        [calendar components:(NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond ) fromDate: referenceDate];
+        
+        [componentsForFireDate setHour: 9];
+        [componentsForFireDate setMinute:0];
+        [componentsForFireDate setSecond:0];
+        
+        NSDate *fireDateOfNotification = [calendar dateFromComponents: componentsForFireDate];
+        
+        // Create the notification
+        
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        
+        notification.fireDate = fireDateOfNotification;
+        notification.timeZone = [NSTimeZone localTimeZone];
+        notification.alertBody = [NSString stringWithFormat:@"Did you know that...?"];
+        notification.alertAction = @"";
+        notification.userInfo= [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@""] forKey:@"information"];
+        notification.repeatInterval = NSCalendarUnitDay;
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        notification.applicationIconBadgeNumber = 1;
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
+    }
 }
 
 @end

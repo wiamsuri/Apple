@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seen</key>
+	<false/>
+	<key>category</key>
+	<integer>1</integer>
+	<key>callUpNumber</key>
+	<integer>2</integer>
+	<key>bookmarked</key>
+	<false/>
+	<key>name</key>
+	<string>We Eat Too Much</string>
+	<key>numberOfPage</key>
+	<integer>4</integer>
+	<key>page1</key>
+	<string>
+Many of us may be eating
+
+too much for our needs.
+
+However, the evidence we have
+
+suggests that we are not eating
+
+more than we did earlier this
+
+century, and may actually be
+
+eating less, that is, less
+
+energy measured as
+
+kilojoules or kilocalories.</string>
+	<key>page2</key>
+	<string>
+If that is the case, then
+
+the main problem is likely
+
+to be that we are not getting
+
+enough physical activity.
+
+For most people, domestic work,
+
+physical effort on the job and
+
+the need to travel on foot, by
+
+bicycle or climb up stairs,
+
+has lessened.</string>
+	<key>page3</key>
+	<string>There may be health risks in
+
+progressively reducing our energy
+
+(kilojoule) intake to match our
+
+ever-falling energy (kilojoule)
+
+expenditure. For one thing, there
+
+have been at least three studies
+
+which show that people who have
+
+a higher energy intake live longer.</string>
+	<key>page4</key>
+	<string>At the very least,
+
+there are difficulties in
+
+achieving an adequate intake
+
+of all essential nutrients
+
+from food alone when the amount
+
+of food eaten only containing
+
+1000 kilocalories 
+or less per day.</string>
+	<key>URLString1</key>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

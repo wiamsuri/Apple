@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seen</key>
+	<false/>
+	<key>category</key>
+	<integer>4</integer>
+	<key>callUpNumber</key>
+	<integer>1</integer>
+	<key>bookmarked</key>
+	<false/>
+	<key>name</key>
+	<string>Drinker and Vitamin Supplement</string>
+	<key>numberOfPage</key>
+	<integer>4</integer>
+	<key>page1</key>
+	<string>
+Those who abuse alcohol are
+
+prone to vitamin deficiencies,
+especially of vitamin B-l
+
+(thiamin), vitamin B-3 (niacin)
+
+and folacin (folic acid), along
+
+with deficiencies in the
+
+minerals zinc and magnesium. </string>
+	<key>page2</key>
+	<string>
+The answer, of course, is to
+
+have a more moderate alcohol
+
+consumption. For men one to
+
+two standard drinks of any kind
+
+and for women about one
+
+standard drink per day is
+
+usually compatible with
+
+good health. </string>
+	<key>page3</key>
+	<string>
+Not all alcohol abusers
+
+develop vitamin deficiencies
+
+and the main reason for
+
+differences between individuals
+
+appears to be how well
+
+they eat. Additionally,
+
+a tendency to develop some
+
+deficiencies like that of
+
+thiamin may be partly inherited. </string>
+	<key>page4</key>
+	<string>
+The hangover after excessive
+
+drinking is in part due to
+
+dehydration and change in
+
+blood acid levels. It is
+
+not a reflection of vitamin
+
+deficiency and it is wrong
+
+to think that vitamin
+
+supplements can deal
+
+with the problem.</string>
+	<key>URLString1</key>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

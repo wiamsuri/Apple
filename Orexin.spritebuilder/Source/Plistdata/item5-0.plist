@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seen</key>
+	<false/>
+	<key>category</key>
+	<integer>6</integer>
+	<key>callUpNumber</key>
+	<integer>1</integer>
+	<key>bookmarked</key>
+	<false/>
+	<key>name</key>
+	<string>Oysters can turn you on</string>
+	<key>numberOfPage</key>
+	<integer>4</integer>
+	<key>page1</key>
+	<string>
+Oysters can turn you on,
+
+but not because of their
+
+nutrient content.</string>
+	<key>page2</key>
+	<string>
+Oysters, by their physiology,
+
+have the ability to concentrate
+
+minerals and heavy metals.
+
+This is both an advantage and
+
+a potential risk to human health
+
+when oysters are eaten.</string>
+	<key>page3</key>
+	<string>
+For example, the essential
+
+trace element zinc has its
+
+highest concentration in
+
+food for human consumption
+
+in the oyster. </string>
+	<key>page4</key>
+	<string>On the other hand,
+
+cadmium can be very toxic,
+
+and it is also found in
+
+oysters on occasions.
+
+Fortunately, several of these
+
+elements compete with each other
+
+for digestion from the human gut.
+
+So the zinc in oysters can
+
+prevent too much of
+
+the cadmium being absorbed.</string>
+	<key>URLString1</key>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

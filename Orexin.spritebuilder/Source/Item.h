@@ -10,16 +10,12 @@
 
 @interface Item : NSObject
 
-//- (instancetype) initWithName:(NSString*) name1 andCallUpName:(NSString*) name2;
+- (NSString*) getCurrentItemName;
 
+- (void) setCurrentItem:(int) i andNumber:(int) j;
 
-- (void) setName:(NSString*) st;
-- (void) setcallupname:(NSString*) st;
-- (void) setBookmarked:(bool) toSet;
-- (void) setSeen:(bool) toSet;
-- (NSString*) getName;
-- (NSString*) getCallUpName;
-- (bool) getSeen;
-- (bool) getBookmarked;
+- (void) changeToNextItem;
+
+- (int) numItemInSec:(int) x;
 
 @end

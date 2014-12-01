@@ -139,7 +139,7 @@
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -148,7 +148,7 @@
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>
@@ -851,7 +851,7 @@ THE FAMILY</string>
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -860,7 +860,7 @@ THE FAMILY</string>
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>
@@ -1564,7 +1564,7 @@ AND DISEASE</string>
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -1573,7 +1573,7 @@ AND DISEASE</string>
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>
@@ -2276,7 +2276,7 @@ OVERWEIGHT</string>
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -2285,7 +2285,7 @@ OVERWEIGHT</string>
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>
@@ -2988,7 +2988,7 @@ AND MINERALS</string>
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -2997,7 +2997,7 @@ AND MINERALS</string>
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>
@@ -3535,6 +3535,8 @@ CONTAMINANTS</string>
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -3701,7 +3703,7 @@ CONTAMINANTS</string>
 											<real>0.0</real>
 											<real>0.0</real>
 											<real>0.0</real>
-											<real>0.20000000298023224</real>
+											<real>0.40000000596046448</real>
 										</array>
 									</dict>
 									<dict>
@@ -3710,7 +3712,7 @@ CONTAMINANTS</string>
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.20000000298023224</real>
+										<real>0.40000000596046448</real>
 									</dict>
 								</array>
 							</dict>

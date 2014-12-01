@@ -7,6 +7,7 @@
 //
 
 #import "OldFact.h"
+#import "Item.h"
 #import "LayerForOldFact.h"
 
 @implementation OldFact{
@@ -18,6 +19,16 @@
 - (void) didLoadFromCCB{
     _layer = (LayerForOldFact*) _scrollView.contentNode;
     _scrollView.delegate = self;
+}
+
+- (void) backbutton{
+    CCScene * newscene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:newscene];
+}
+
+- (void) tonext{
+    Item * temp = [[Item alloc] init];
+    [temp changeToNextItem];
 }
 
 @end

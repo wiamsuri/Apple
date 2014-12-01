@@ -5,68 +5,69 @@
 	<key>seen</key>
 	<false/>
 	<key>category</key>
-	<integer>1</integer>
+	<integer>5</integer>
 	<key>callUpNumber</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>bookmarked</key>
 	<false/>
 	<key>name</key>
-	<string>Calcium vs. Sodium</string>
+	<string>Caffeine can be harmful</string>
 	<key>numberOfPage</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>page1</key>
 	<string>
+Caffeine can be harmful,
 
+but for most people
 
-Calcium. We all know that
-
-milk contains calcium and
-
-drinking milk will make you
-
-tall. That is true. However,</string>
+caffeine is safe.</string>
 	<key>page2</key>
 	<string>
-There is a sodium-calcium
+It is unlikely that caffeine
 
-exchanger membrane in your
+in coffee, cola soft drinks
 
-cells. It can remove calcium
+or tea poses a serious health
 
-from cells with sodium. 
+hazard for the majority of
 
-This means eating sodium,
+people who consume these
 
-which is anything salty,
-
-will make the calcium go away.</string>
+beverages in moderation.</string>
 	<key>page3</key>
 	<string>
+caffeine is a central nervous
 
+system stimulant and while
 
-No matter how much milk
+some people can consume
 
-you drink or calcium supplement
+substantial amounts without
 
-you take, if you eat salty things, 
+apparent ill-effects, others
 
-that calcium will not be effective.</string>
+can be more sensitive.</string>
 	<key>page4</key>
 	<string>
+For those who wish to avoid
 
-Eating tips of the day:
+caffeine in coffee, there
 
-Know that what you know about
+are a number of alternative
 
-nutrition can be true, and
+beverage preparations available.
 
-you will, still, not be able
+In addition, decaffeinated
 
-to benefit from it without the
+coffees, which have been
 
-knowledge of the whole story</string>
-	<key>page5</key>
-	<string></string>
+prepared by extraction of the
+
+natural caffeine, contain only
+
+about one-twentieth of
+
+the original caffeine.</string>
 	<key>URLString1</key>
 	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>

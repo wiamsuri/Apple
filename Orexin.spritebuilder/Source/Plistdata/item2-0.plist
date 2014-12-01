@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seen</key>
+	<false/>
+	<key>category</key>
+	<integer>3</integer>
+	<key>callUpNumber</key>
+	<integer>1</integer>
+	<key>bookmarked</key>
+	<false/>
+	<key>name</key>
+	<string>Fat Structure</string>
+	<key>numberOfPage</key>
+	<integer>3</integer>
+	<key>page1</key>
+	<string>
+The fat in meat marked
+
+its energy value. Therefore,
+
+choosing lean meat is
+
+a considerable advantage</string>
+	<key>page2</key>
+	<string>
+Lean meat contains fat,
+
+but it is a different
+
+kind of fat. It is not
+
+depot fat, but structural
+
+fat, being part the membrane
+
+of the muscle, fibres. </string>
+	<key>page3</key>
+	<string>
+This structural fat can
+
+be beneficial to health
+
+as it is polyunsaturated
+
+with both the 'omega-3'
+
+and 'omega-6' kinds of
+
+essential fatty acids</string>
+	<key>URLString1</key>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

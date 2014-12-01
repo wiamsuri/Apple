@@ -5,68 +5,101 @@
 	<key>seen</key>
 	<false/>
 	<key>category</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>callUpNumber</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>bookmarked</key>
 	<false/>
 	<key>name</key>
-	<string>Calcium vs. Sodium</string>
+	<string>Bacon Cause Cancer?</string>
 	<key>numberOfPage</key>
-	<integer>3</integer>
+	<integer>5</integer>
 	<key>page1</key>
 	<string>
+It is not known if bacon
 
+causes cancer. As with
 
-Calcium. We all know that
+many foods, it is not
 
-milk contains calcium and
+possible to say that bacon
 
-drinking milk will make you
-
-tall. That is true. However,</string>
+is absolutely safe.</string>
 	<key>page2</key>
 	<string>
-There is a sodium-calcium
+Just as we know, for
 
-exchanger membrane in your
+example, milk or potatoes
 
-cells. It can remove calcium
+are potentially harmful
 
-from cells with sodium. 
+under some circumstances
 
-This means eating sodium,
+or for some sensitive people,
 
-which is anything salty,
+then we know that bacon
 
-will make the calcium go away.</string>
+could potentially cause cancer.
+
+However, at present, there is
+
+no evidence that it does.</string>
 	<key>page3</key>
 	<string>
+Bacon, like other cured (or
 
+pickled) meats such as ham,
 
-No matter how much milk
+corned beef, frankfurters
 
-you drink or calcium supplement
+and salami, contain nitrite.
 
-you take, if you eat salty things, 
+Nitrosamines can cause cancer
 
-that calcium will not be effective.</string>
+in laboratory animals and
+
+they may have the same
+
+potential in humans. </string>
 	<key>page4</key>
 	<string>
+However, the nitrosamines
 
-Eating tips of the day:
+in bacon occur in much
 
-Know that what you know about
+lower levels than the amounts
 
-nutrition can be true, and
+used in tests with laboratory
 
-you will, still, not be able
+animals and we do not know
 
-to benefit from it without the
+how low the probability of
 
-knowledge of the whole story</string>
+getting cancer from exposure
+
+to these low levels is. </string>
 	<key>page5</key>
-	<string></string>
+	<string>The picture is complicated
+
+because the potential to
+
+form carcinogenic (cancer
+
+causing) nitrosamines is
+
+altered by other dietary
+
+components. For example,
+
+vitamin C can prevent the
+
+formation of nitrosamines.
+
+It seems wise not to consume
+
+excessive amounts of foods
+
+containing nitrite and nitrate.</string>
 	<key>URLString1</key>
 	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>

@@ -5,68 +5,63 @@
 	<key>seen</key>
 	<false/>
 	<key>category</key>
-	<integer>1</integer>
+	<integer>4</integer>
 	<key>callUpNumber</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>bookmarked</key>
 	<false/>
 	<key>name</key>
-	<string>Calcium vs. Sodium</string>
+	<string>Women Need More Calcium</string>
 	<key>numberOfPage</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>page1</key>
 	<string>
+For some reason, women
 
+are more prone to osteoporosis
 
-Calcium. We all know that
+or thinning of the bones
 
-milk contains calcium and
-
-drinking milk will make you
-
-tall. That is true. However,</string>
+than men. </string>
 	<key>page2</key>
 	<string>
-There is a sodium-calcium
+Bone consists of much
 
-exchanger membrane in your
+more than calcium,
 
-cells. It can remove calcium
+and the factors affecting
 
-from cells with sodium. 
+calcium levels in bone
 
-This means eating sodium,
+involve more than
 
-which is anything salty,
-
-will make the calcium go away.</string>
+dietary intake. </string>
 	<key>page3</key>
 	<string>
+The body's calcium balance
+and bone density
+can be affected by:
 
+1. hormones
 
-No matter how much milk
-
-you drink or calcium supplement
-
-you take, if you eat salty things, 
-
-that calcium will not be effective.</string>
+steroids including sex hormones
+e.g., cortisone (unfavourably) 
+e.g., sex hormones (favourably)
+parathyroid hormones (unfavourably)
+calcitonin (favourably)</string>
 	<key>page4</key>
 	<string>
+2. physical activity (favourably)
 
-Eating tips of the day:
+3. vitamin D (from food or formed under the influence of sunlight) (favourably)
 
-Know that what you know about
+4. food and beverage intake
 
-nutrition can be true, and
-
-you will, still, not be able
-
-to benefit from it without the
-
-knowledge of the whole story</string>
-	<key>page5</key>
-	<string></string>
+calcium (favourably)
+sodium (unfavourably)
+caffeine (unfavourably)
+protein (unfavourably)
+alcohol (unfavourably)</string>
 	<key>URLString1</key>
 	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
 	<key>URLString2</key>

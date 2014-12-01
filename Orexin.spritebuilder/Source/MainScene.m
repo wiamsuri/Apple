@@ -8,7 +8,7 @@
 
 #import "MainScene.h"
 #import "ScrollViewLayer.h"
-//#import "SmallBox.h"
+#import "Item.h"
 
 @implementation MainScene{
     CCScrollView *_scrollView;
@@ -24,7 +24,10 @@
 
 - (void) didLoadFromCCB{
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item003" ofType:@"plist"];
+    Item * i = [[Item alloc] init];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:[i getCurrentItemName] ofType:@"plist"];
+    
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSNumber * numbpages = [dict objectForKey:@"numberOfPage"];
     int x = numbpages.intValue+2;
@@ -32,7 +35,7 @@
     _currentScrollView = (ScrollViewLayer*)_scrollView.contentNode;
     _scrollView.delegate = self;
     [self setupDots:_scrollView.horizontalPage];
-    [self setFireDate];
+    
     //[UIApplication sharedApplication].scheduledLocalNotifications = nil;
     self.userInteractionEnabled = true;
     
@@ -56,49 +59,6 @@
     }
 }
 
-- (void) setFireDate{
-    //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
-    if([UIApplication sharedApplication].scheduledLocalNotifications.count == 0 || [UIApplication sharedApplication].scheduledLocalNotifications == nil){
-        //make ner notification
-        //NSLog(@"make new one");
-        NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
-        
-        NSDateComponents *componentsForReferenceDate =
-        
-        [calendar components:(NSCalendarUnitDay | NSCalendarUnitYear | NSCalendarUnitMonth ) fromDate:[NSDate date]];
-        
-        [componentsForReferenceDate setDay:12];
-        [componentsForReferenceDate setMonth:8];
-        [componentsForReferenceDate setYear:2014];
-        
-        NSDate *referenceDate = [calendar dateFromComponents:componentsForReferenceDate];
-        
-        NSDateComponents *componentsForFireDate =
-        
-        [calendar components:(NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond ) fromDate: referenceDate];
-        
-        [componentsForFireDate setHour: 9];
-        [componentsForFireDate setMinute:0];
-        [componentsForFireDate setSecond:0];
-        
-        NSDate *fireDateOfNotification = [calendar dateFromComponents: componentsForFireDate];
-        
-        // Create the notification
-        
-        UILocalNotification *notification = [[UILocalNotification alloc] init];
-        
-        notification.fireDate = fireDateOfNotification;
-        notification.timeZone = [NSTimeZone localTimeZone];
-        notification.alertBody = [NSString stringWithFormat:@"Did you know that...?"];
-        notification.alertAction = @"";
-        notification.userInfo= [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@""] forKey:@"information"];
-        notification.repeatInterval = NSCalendarUnitDay;
-        notification.soundName = UILocalNotificationDefaultSoundName;
-        notification.applicationIconBadgeNumber = 1;
-        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-        //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
-    }
-}
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     

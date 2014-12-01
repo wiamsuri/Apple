@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seen</key>
+	<false/>
+	<key>category</key>
+	<integer>2</integer>
+	<key>callUpNumber</key>
+	<integer>1</integer>
+	<key>bookmarked</key>
+	<false/>
+	<key>name</key>
+	<string>Prevent Cancer</string>
+	<key>numberOfPage</key>
+	<integer>4</integer>
+	<key>page1</key>
+	<string>The general approach to reduce
+
+risk of cancer is to:
+
+increase intake of plant food,
+
+especially wholegrain cereal
+
+and fruits and vegetables of
+
+various kinds, so that at least
+
+50 per cent of energy or
+
+calorie intake comes from
+
+these foods</string>
+	<key>page2</key>
+	<string>decrease intake of fat
+
+(probably to around 20 to
+
+25 per cent of total energy
+
+or calorie intake), especially
+
+saturated animal fat, since
+
+this is usually the major
+
+fat in the western diet</string>
+	<key>page3</key>
+	<string>avoid other than occasional
+
+salted, cured or
+
+smoked foods,</string>
+	<key>page4</key>
+	<string>be modest about alcohol
+
+intake, probably not more
+
+than an average of one
+
+standard drink (such as
+
+a glass of regular beer,
+
+a glass of wine) a day
+
+for women and two for men.</string>
+	<key>URLString1</key>
+	<string>https://www.facebook.com/notes/orexin/test/552913338146430</string>
+	<key>URLString2</key>
+	<string></string>
+</dict>
+</plist>

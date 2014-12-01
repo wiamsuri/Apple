@@ -9,6 +9,7 @@
 #import "ScrollViewLayer.h"
 #import "TweetLayer.h"
 #import "Page.h"
+#import "Item.h"
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 
@@ -31,8 +32,12 @@
 }
 
 - (void) didLoadFromCCB{
+    
+    Item * i = [[Item alloc] init];
+    
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"item003" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[i getCurrentItemName] ofType:@"plist"];
+    
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     self.userInteractionEnabled = true;
     //get number of pages and set up
@@ -74,10 +79,10 @@
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
-    NSNumber * hehe = [dict objectForKey:@"seen"];
-    NSLog(@"loll");
-    hehe = 0;
-    [dict setValue:hehe forKey:@"seen"];
+    //NSNumber * hehe = [dict objectForKey:@"seen"];
+    //NSLog(@"loll");
+    //hehe = 0;
+    //[dict setValue:hehe forKey:@"seen"];
     //[dict setValue:true forKey:@"seen"];
 }
 
