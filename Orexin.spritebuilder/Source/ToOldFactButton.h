@@ -10,4 +10,8 @@
 
 @interface ToOldFactButton : CCNode
 
+- (void) setLable:(NSString*) str;
+
+- (void) setIJ:(int) ii and:(int) jj;
+
 @end

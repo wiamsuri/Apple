@@ -18,12 +18,21 @@
     NSInteger jnow = j % [self numItemInSec:(int)i];
     
     NSString * temp = [NSString stringWithFormat:@"item%li-%li", i,jnow];
-    NSLog(temp);
+    //NSLog(temp);
     return temp;
 }
 
 - (void) setCurrentItem:(int) i andNumber:(int) j{
     //[[NSUserDefaults standardUserDefaults] setValue:set forKey:@"CurrentItem"];
+    NSInteger x = i;
+    NSInteger y = j;
+    if(x >= 6)
+        return;
+    if(y >= [self numItemInSec:i])
+        return;
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"vergin start"];
+    [[NSUserDefaults standardUserDefaults] setInteger:x forKey:@"verginx"];
+    [[NSUserDefaults standardUserDefaults] setInteger:y forKey:@"verginy"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -48,15 +57,10 @@
             check = false;
         }
     }
-    
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"vergin start"];
     [[NSUserDefaults standardUserDefaults] setInteger:i forKey:@"ITEM INT I"];
     [[NSUserDefaults standardUserDefaults] setInteger:j forKey:@"ITEM INT J"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    //}
-    //else{
-    //    j++;
-    //}
 }
 
 - (int) numItemInSec:(int) x{

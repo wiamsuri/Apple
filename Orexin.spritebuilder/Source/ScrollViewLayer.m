@@ -33,10 +33,24 @@
 
 - (void) didLoadFromCCB{
     
-    Item * i = [[Item alloc] init];
+    Item * item = [[Item alloc] init];
     
     // Path to the plist (in the application bundle)
-    NSString *path = [[NSBundle mainBundle] pathForResource:[i getCurrentItemName] ofType:@"plist"];
+    NSString * name;
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"vergin start"]){
+        
+        name =[item getCurrentItemName];
+    }
+    else{
+        NSInteger i = [[NSUserDefaults standardUserDefaults] integerForKey:@"verginx"];
+        NSInteger j = [[NSUserDefaults standardUserDefaults] integerForKey:@"verginy"];
+        NSInteger jnow = j % [item numItemInSec:(int)i];
+        
+        name = [NSString stringWithFormat:@"item%li-%li", i,jnow];
+    }
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
     
     dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     self.userInteractionEnabled = true;
@@ -84,6 +98,17 @@
     //hehe = 0;
     //[dict setValue:hehe forKey:@"seen"];
     //[dict setValue:true forKey:@"seen"];
+    /*for(int i = 0; i < 6; i++){
+        Item * hehe = [[Item alloc] init];
+        int maxInsection = [hehe numItemInSec:i];
+        for(int j = 0; j < maxInsection; j++){
+            
+            NSString * temp = [NSString stringWithFormat:@"item%i-%i", i,j];
+            NSLog(@"%@",[[[NSUserDefaults standardUserDefaults] objectForKey:temp] objectForKey:@"seen"]);
+        }
+    }
+    NSLog(@"=======================");
+    */
 }
 
 - (void) toOldFacts{

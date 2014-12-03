@@ -34,6 +34,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+    
     [Parse setApplicationId:@"uqt7zwMD2ORgmSkVYcy7bE4NyfWGMTuZ1mVtOAbr"
                   clientKey:@"x1xkFz4ucchKJqSme9cPgGnLavypVeX7ZZ1Y3Z6P"];
     
@@ -56,8 +58,17 @@
         [self setupArray];
     }
     
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"vergin start"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [self checkForNewFact];
+    
+    //ask for permission
+    [self askForPermission];
+    //set fire date
     [self setFireDate];
+    
+    
     [self checkIn];
     
     // Configure Cocos2d with the options set in SpriteBuilder
@@ -107,18 +118,56 @@
 - (void) checkIn{
     NSDate *now = [NSDate date];
     [[NSUserDefaults standardUserDefaults] setObject:now forKey:@"lastSeen"];
+    //NSLog(@"setlastseen");
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void) checkForNewFact{
     //IF SHOULD PRESENT NEW FACT
+    NSDate * then = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastSeen"];
+    NSDate * now = [NSDate date];
+    NSTimeInterval interval = [then timeIntervalSinceDate:now];
+    //NSTimeInterval interval2 = [now timeIntervalSinceDate:then];
+    //NSLog(@"%f",interval);
+    //NSLog(@"%f",interval2);
+    float nowtothen = interval;//this one is negative
+    nowtothen = nowtothen/3600;//change to hours
+    //NSLog(@"NOW TO THEN IN HOURS%f",nowtothen);
+    NSCalendar * cal = [NSCalendar autoupdatingCurrentCalendar];
+    NSDateComponents *components =
+    [cal components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond ) fromDate: now];
+    [components setHour:9];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    NSDate * ninetoday = [cal dateFromComponents:components];
+    NSTimeInterval lastseenToNine = [ninetoday timeIntervalSinceDate:then];
+    NSTimeInterval nowToNine = [ninetoday timeIntervalSinceDate:now];
+    //NSLog(@"Lastseen SINCE 9am%f", lastseenToNine);
+    //NSLog(@"Time since 9am%f", nowToNine);
+    //if lastseen to nine is positive AND not to nine is negative, then we have crossed the 9o'clock
+    //NSLog(@"=============================");
     //check by the last check in time @"lastSeen"
+    Item * i = [[Item alloc] init];
+    
+    if(nowtothen <= -24.0){
         //CALL THE ITEM NEXT ITEM
+        //after calling next item, change lastseen to now right away to prevent any shit from going wrong
+        [i changeToNextItem];
+        [self checkIn];
+    }
+    else{
+        if(lastseenToNine > 0 && nowToNine < 0){
+            [i changeToNextItem];
+            [self checkIn];
+        }
+    }
     //ELSE DO NOTHING
+    
 }
 
 - (void) setupArray{
-    NSMutableArray * newArray = [[NSMutableArray alloc] init];
+    //NSMutableArray * newArray = [[NSMutableArray alloc] init];
     //NSDictionary * newdict = [[NSDictionary alloc] init];
     
     //NSHashTable * newhash = [[NSHashTable alloc] init];
@@ -136,25 +185,25 @@
             //set up dict
             newdict = [[NSDictionary alloc] initWithObjectsAndKeys:[dict objectForKey:@"name"],@"name",[NSNumber numberWithInt:i],@"i-factor",[NSNumber numberWithInt:j],@"j-factor",[NSNumber numberWithBool:false], @"seen",[NSNumber numberWithBool:false], @"bookmarked",nil];
             //add to array
-            [newArray addObject:newdict];
-            
+            //[newArray addObject:newdict];
+            //NSString * temp2 = [NSString stringWithFormat:temp,@"info"];
+            [[NSUserDefaults standardUserDefaults] setObject:newdict forKey:temp];
         }
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"arrayOfItemCaller"];
-    NSLog(@"%li", (long)[newArray count]);
+    //[[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"arrayOfItemCaller"];
+    //NSLog(@"%li", (long)[newArray count]);
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"FirstStartForArray"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
-- (CCScene*) startScene
-{
-    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"FirstStartpaileaw"])
-        return [CCBReader loadAsScene:@"FirstStart"];
-    else
-        return [CCBReader loadAsScene:@"MainScene"];
+- (void) askForPermission{
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge
+                                                                                                              categories:nil]];
+    }
 }
 
 - (void) setFireDate{
@@ -168,8 +217,8 @@
         
         [calendar components:(NSCalendarUnitDay | NSCalendarUnitYear | NSCalendarUnitMonth ) fromDate:[NSDate date]];
         
-        [componentsForReferenceDate setDay:12];
-        [componentsForReferenceDate setMonth:8];
+        [componentsForReferenceDate setDay:1];
+        [componentsForReferenceDate setMonth:1];
         [componentsForReferenceDate setYear:2014];
         
         NSDate *referenceDate = [calendar dateFromComponents:componentsForReferenceDate];
@@ -199,6 +248,14 @@
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
         //NSLog(@"%@",[[UIApplication sharedApplication] scheduledLocalNotifications]);
     }
+}
+
+- (CCScene*) startScene
+{
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"FirstStartpaileaw"])
+        return [CCBReader loadAsScene:@"FirstStart"];
+    else
+        return [CCBReader loadAsScene:@"MainScene"];
 }
 
 @end

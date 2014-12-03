@@ -24,9 +24,28 @@
 
 - (void) didLoadFromCCB{
     
-    Item * i = [[Item alloc] init];
+    Item * item = [[Item alloc] init];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:[i getCurrentItemName] ofType:@"plist"];
+    NSString * name;
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"vergin start"]){
+        
+        name =[item getCurrentItemName];
+    }
+    else{
+        NSInteger i = [[NSUserDefaults standardUserDefaults] integerForKey:@"verginx"];
+        NSInteger j = [[NSUserDefaults standardUserDefaults] integerForKey:@"verginy"];
+        NSInteger jnow = j % [item numItemInSec:(int)i];
+        
+        name = [NSString stringWithFormat:@"item%li-%li", i,jnow];
+    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
+    
+    //set this item to seen
+    NSDictionary * dicttochange = [[NSUserDefaults standardUserDefaults] objectForKey:name];
+    NSDictionary * newdict = [[NSDictionary alloc] initWithObjectsAndKeys:[dicttochange objectForKey:@"name"],@"name",[dicttochange objectForKey:@"i-factor"],@"i-factor",[dicttochange objectForKey:@"j-factor"],@"j-factor",[NSNumber numberWithBool:true], @"seen",[dicttochange objectForKey:@"bookmarked"], @"bookmarked",nil];
+    [[NSUserDefaults standardUserDefaults] setObject:newdict forKey:name];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSNumber * numbpages = [dict objectForKey:@"numberOfPage"];
@@ -38,9 +57,6 @@
     
     //[UIApplication sharedApplication].scheduledLocalNotifications = nil;
     self.userInteractionEnabled = true;
-    
-    
-    
 }
 
 - (void) setUpDotsInit:(int) numDots{
@@ -61,6 +77,7 @@
 
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    
     
 }
 
