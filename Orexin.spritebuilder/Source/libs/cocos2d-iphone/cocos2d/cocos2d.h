@@ -103,6 +103,8 @@
 #import "CCTiledMapLayer.h"
 #import "CCTiledMapObjectGroup.h"
 #import "CCTransition.h"
+#import "CCPackageManager.h"
+#import "CCPackage.h"
 
 #if CC_EFFECTS_EXPERIMENTAL
 #import "CCEffectDFOutline.h"
@@ -124,7 +126,7 @@
 #import "CCPhysicsShape.h"
 
 // Sound
-#import "OALSimpleAudio.h"
+//#import "OALSimpleAudio.h"
 
 // Retiring
 //#import "CCAnimation.h"

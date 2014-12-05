@@ -28,7 +28,8 @@
 #import "CCSpriteBatchNode.h"
 #import "CCTMXXMLParser.h"
 #import "CCTiledMap.h"
-#import "CCMathTypesAndroid.h"
+//COMMENT OUT HERE FOR ANDROID
+//#import "CCMathTypesAndroid.h"
 
 @class CCTiledMapInfo;
 @class CCTiledMapLayerInfo;
